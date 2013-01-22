@@ -1,0 +1,52 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% get_media_prefix as MEDIA_PREFIX %}
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>DavidVU - Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="{{ STATIC_PREFIX }}stylesheets/app.css">
+
+	<script src="{{ STATIC_PREFIX }}javascripts/foundation/modernizr.foundation.js"></script>
+	
+	{% block extrahead %}
+	{% endblock %}
+
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500,700|Amaranth' rel='stylesheet' type='text/css'>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	{% include "website/header.html" %}
+	  
+	  
+	  <!-- Content -->
+	  
+	  <div class="row">
+	  	<div class="twelve columns">
+	  		<div class="content">
+	  			{% block content %}
+		    	{% endblock %}
+	  		</div>
+	  	</div>
+	  </div>
+	  
+	  {% include "website/footer.html" %}
+	  
+</body>
+</html>

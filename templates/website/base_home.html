@@ -1,0 +1,122 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+{% get_media_prefix as MEDIA_PREFIX %}
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>DavidVU - Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="{{ STATIC_PREFIX }}stylesheets/app.css">
+
+	<script src="{{ STATIC_PREFIX }}javascripts/foundation/modernizr.foundation.js"></script>
+	
+	{% block extrahead %}
+	{% endblock %}
+	
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500,700|Amaranth' rel='stylesheet' type='text/css'>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	{% include "website/header.html" %}
+	  
+	  
+	  <!-- First Band (Slider) -->
+	  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
+	    
+	  <div class="row">
+	    <div class="twelve columns">
+	      <div id="slider">
+	        <img src="{{ STATIC_PREFIX }}images/hana_wordpress_slide.jpg" />
+	        <img src="http://placehold.it/1000x400&text=[img 2]" />
+	        <img src="http://placehold.it/1000x400&text=[img 3]" />
+	        <img src="http://placehold.it/1000x400&text=[img 4]" />
+	      </div>
+	      
+	      <hr />
+	    </div>
+	  </div>
+	  
+	  <div class="row frase">
+	  	<div class="twelve columns">
+	  		<h1>Me especializo en el desarrollo profesional de sitios web con <span>HTML5</span>, <span>CSS3</span>, <span>dJango</span>, <span>Wordpress</span>, <span>CakePHP</span>, <span>Responsive</span>.</h1>
+	  	</div>
+	  </div>
+	  
+	  <!-- Three-up Content Blocks -->
+	  
+	  <div class="row">
+	  
+	    <div class="four columns">
+	      <h4>Lo que hago</h4>
+	      <p>
+	      	Soy <b>desarrollador web</b> y <b>artista 3D</b> freelance que hace uso de herramientas y librerias de <b>código abierto</b>,
+	      	para crear <b>aplicaciones</b> y <b>sitios web</b> que cumplan estándares, fáciles de actualizar y optimizados para los buscadores <b>(SEO)</b>.
+	      	
+	      </p>
+	      
+	    </div>
+	    
+	    <div class="four columns">
+	      <h4>Clientes</h4>
+	      <p>
+	      	Mis clientes son agencias de publicidad o empresas independientes que ya cuentan con el diseño
+	      	y necesitan programar un sitio web completamente funcional.
+	      </p>
+	    </div>
+	    
+	    <div class="four columns">
+	      <h4>Enlaces de interés</h4>
+	      
+	      	<ul>
+	      		<li><a href="http://blenderes.com" target="_blank">BlenderEs</a></li>
+	      		<li><a href="http://www.djangoproject.com/" target="_blank">dJango</a></li>
+	      		<li><a href="http://cakephp.org" target="_blank">CakePHP</a></li>
+	      		<li><a href="http://wordpress.org" target="_blank">WordPress</a></li>
+	      		<li><a href="http://blender.org" target="_blank">Blender</a></li>
+	      	</ul>
+	      
+	    </div>
+	    
+	  </div>
+	  
+	  
+	  <!-- Call to Action Panel -->
+	  <div class="row">
+	    <div class="twelve columns">
+	    
+	      <div class="panel">
+	        <h4>Contáctame</h4>
+	            
+	        <div class="row">
+	          <div class="nine columns">
+	            <p>Un correo electrónico es la forma más fácil y rápida de contactarme, escríbeme y así podremos trabajar juntos. Saludos!</p>
+	          </div>
+	          <div class="three columns">
+	            <a href="mailto:david@davidvu.co" class="radius button right">Escribir</a>
+	          </div>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	  
+	  {% include "website/footer.html" %}
+	  
+</body>
+</html>

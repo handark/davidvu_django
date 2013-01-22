@@ -1,0 +1,17 @@
+{% extends "website/base.html" %}
+{% block content %}
+	<h3>Portafolio</h3>
+	<p>
+		Serie de proyectos que he desarrollado durante varios años de trabajo, siempre tratando de tener un código limpio y organizado.
+		Usando la mayor cantidad de etiquetas para obtener un buen <b>SEO</b>.
+	</p>
+	{% if latest_companies %}
+	    <ul>
+	    {% for company in latest_companies %}
+	        <li><a href="/portafolio/{{ company.slug }}/">{{ company.company_name }}</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>No companies are available.</p>
+	{% endif %}
+{% endblock %}

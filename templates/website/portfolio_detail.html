@@ -1,0 +1,10 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+<h1>{{ company.company_name }}</h1>
+
+	{% for image in company.image_set.all %}
+		<img src="{{ image.thumb.url }}" alt="{{ image.name }}"/>
+	{% endfor %}
+
+{% endblock %}
