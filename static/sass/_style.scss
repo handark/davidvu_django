@@ -1,3 +1,16 @@
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Estilos compartidos
+:: Inicio
+:: Portafolio
+
+*/
+
+/* -----------------------------------------
+   Estilos compartidos
+----------------------------------------- */
+
 body{
 	background: url(../images/bg.gif);
 	font-family: 'Maven Pro', sans-serif;
@@ -8,9 +21,14 @@ h1, h2, h3, h4{
 p{
 	font-family: 'Maven Pro', sans-serif;
 }
+hr{
+	border-color: rgba(240, 126, 0, 0.4);
+	margin: 10px 3px;
+}
 
 #footer-container{
 	background: url(../images/bg_footer.png);
+	margin-top: 40px;
 	
 	p,
 	h4{
@@ -36,6 +54,10 @@ p{
 	
 }
 
+/* -----------------------------------------
+   Inicio
+----------------------------------------- */
+
 .frase{
 	border-bottom: 1px solid $naranja;
 	border-top: 1px solid $naranja;
@@ -47,6 +69,34 @@ p{
 		
 		span{
 			color: $naranja;
+		}
+	}
+}
+
+/* -----------------------------------------
+   Portafolio
+----------------------------------------- */
+
+#portfolio-list{
+	
+	.portfolio-preview{
+		background: rgba(240, 126, 0, 0.2);
+		border:1px solid $naranja;
+		padding: 5px;
+		
+		&:hover{
+			border:1px solid $white;
+		}
+		
+		p.company-name{
+			margin-bottom: 0;
+			text-align: center;
+			text-transform: uppercase;
+			text-shadow: 1px 0px 0 $white;
+			
+			a{
+				//color: $white;
+			}
 		}
 	}
 }

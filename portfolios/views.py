@@ -2,9 +2,9 @@ from django.shortcuts import render_to_response, get_object_or_404
 from portfolios.models import Company
 
 def index(request):
-    latest_companies = Company.objects.all().order_by('-pub_date')[:5]
     #output = ', '.join([c.company_name for c in latest_companies])
-    return render_to_response('website/portfolio.html', {'latest_companies': latest_companies})
+    all_companies = Company.objects.all().order_by('-pub_date')
+    return render_to_response('website/portfolio.html', {'all_companies': all_companies})
     """
     t = loader.get_template('companies/index.html')
     c = Context({

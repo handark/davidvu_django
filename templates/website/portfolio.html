@@ -3,15 +3,40 @@
 	<h3>Portafolio</h3>
 	<p>
 		Serie de proyectos que he desarrollado durante varios años de trabajo, siempre tratando de tener un código limpio y organizado.
-		Usando la mayor cantidad de etiquetas para obtener un buen <b>SEO</b>.
+		Usando adecuadamenta las cantidad necesaria de etiquetas HTML para obtener un buen <b>SEO</b>. <a href="mailto:david@davidvu.co">Estoy disponible para trabajo freelance</a>
 	</p>
-	{% if latest_companies %}
-	    <ul>
-	    {% for company in latest_companies %}
-	        <li><a href="/portafolio/{{ company.slug }}/">{{ company.company_name }}</a></li>
-	    {% endfor %}
-	    </ul>
+	{% if all_companies %}
+		<div id="portfolio-list">
+		    {% for company in all_companies %}
+		    
+				{% if forloop.counter0|divisibleby:"4" %}
+					<div class="row">
+				{% endif %}
+				
+			    	<div class="three columns end">
+			    		<div class="portfolio-preview">
+				        	<a href="/portafolio/{{ company.slug }}/" title="Ver desarrollo {{ company.company_name }}">
+				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />
+				        	</a>
+				        	<p class="company-name">
+				        		<a href="/portafolio/{{ company.slug }}/" title="Ver desarrollo">
+				        			{{ company.company_name }}
+				        		</a>
+				        	</p>
+				        </div>
+			        </div>
+			        
+			    {% if forloop.counter|divisibleby:"4" %}  
+			    	</div>
+			    {% endif %}
+			    
+			    {% if forloop.last and not forloop.counter|divisibleby:"4" %}  
+			    	</div>
+			    {% endif %}
+			    
+			{% endfor %}
+		</div>	
 	{% else %}
-	    <p>No companies are available.</p>
+	    <p>No hay portafolio disponible.</p>
 	{% endif %}
 {% endblock %}
