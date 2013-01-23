@@ -6,4 +6,4 @@ local_settings.py
 davidvu/settings.py
 .project
 .pydevproject
-static/.sas-cache/*
+static/.sass-cache/*
