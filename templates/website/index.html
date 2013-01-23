@@ -1,9 +1,10 @@
 {% extends "website/base_home.html" %}
+{% load page_extras %}
 {% block twitter %}
 	<ul id="tweets_list">
 		{% for tweet in tweets.tweets %}
 			<li>
-				<span>{{ tweet.status|safe }}</span>
+				<span>{{ tweet.status|twitterize }}</span>
 				-
 				<a href="http://twitter.com/zeroblend/status/{{ tweet.id }}" target="_blank" title="Ver tweet">{{ tweet.date }}</a>			
 			</li>
