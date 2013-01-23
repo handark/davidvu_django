@@ -1,6 +1,7 @@
 from django.db import models
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from tinymce import models as tinymce_models
 
 class Category(models.Model):
     name = models.CharField(max_length=200)
@@ -16,11 +17,11 @@ class Company(models.Model):
     slug = models.SlugField(unique=True)
     year = models.CharField(max_length=4)
     design = models.CharField(max_length=50)
-    description = models.TextField()
+    #description = models.TextField()
+    description = tinymce_models.HTMLField()
     url = models.URLField()
     pub_date = models.DateTimeField('Date published');
     category = models.ForeignKey(Category)
-    
     
     class Meta:
         verbose_name_plural = "companies"

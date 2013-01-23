@@ -4210,7 +4210,7 @@ body {
 }
 
 /* line 18, ../sass/_style.scss */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Amaranth',sans-serif;
 }
 
@@ -4291,6 +4291,30 @@ hr {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 0px 0 white;
+}
+
+/* line 105, ../sass/_style.scss */
+.portfolio-header h3 {
+  margin: 0;
+}
+/* line 109, ../sass/_style.scss */
+.portfolio-header .url {
+  margin-top: 7px;
+}
+
+/* line 115, ../sass/_style.scss */
+.description h4 {
+  margin: 0;
+}
+/* line 119, ../sass/_style.scss */
+.description .thumbs {
+  margin-top: 10px;
+}
+/* line 122, ../sass/_style.scss */
+.description .thumbs img {
+  background: rgba(240, 126, 0, 0.2);
+  border: 1px solid #ff7301;
+  padding: 5px;
 }
 
 /* Requires
