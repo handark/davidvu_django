@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-25 15:50-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: davidvu/settings.py:41
+msgid "Spanish"
+msgstr ""
+
+#: davidvu/settings.py:42
+msgid "English"
+msgstr ""
+
+#: imagekit/admin.py:10
+msgid "Thumbnail"
+msgstr ""
+
+#: pages/models.py:16
+msgid "mensaje"
+msgstr "message"
+
+#: pages/models.py:17
+msgid "correo"
+msgstr "email"
+
+#: pages/views.py:42
+msgid "Por favor llene todos los campos."
+msgstr "Please fill all the inputs"
+
+#: pages/views.py:58
+msgid "Sígueme en @zeroblend"
+msgstr "Followme @zeroblend"
+
+#: templates/admin/base_site.html:4
+msgid "DavidVU site admin"
+msgstr ""
+
+#: templates/admin/base_site.html:7
+msgid "DavidVU administration"
+msgstr ""
+
+#: templates/admin/index.html:18
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr ""
+
+#: templates/admin/index.html:19
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: templates/admin/index.html:29
+msgid "Add"
+msgstr ""
+
+#: templates/admin/index.html:35
+msgid "Change"
+msgstr ""
+
+#: templates/admin/index.html:45
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: templates/admin/index.html:53
+msgid "Recent Actions"
+msgstr ""
+
+#: templates/admin/index.html:54
+msgid "My Actions"
+msgstr ""
+
+#: templates/admin/index.html:58
+msgid "None available"
+msgstr ""
+
+#: templates/admin/index.html:72
+msgid "Unknown content"
+msgstr ""
+
+#: templates/website/base.html:18 templates/website/base_home.html:18
+msgid "DavidVU :: Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango"
+msgstr "DavidVU :: Freelance web developer HTML5, CSS3, Wordpress, dJango"
+
+#: templates/website/base.html:19 templates/website/base_home.html:20
+msgid ""
+"Davidvu.co es mi portafolio personal sobre desarrollo y programación web, "
+"acá puedes contactarme para realizar desarrollos freelance tanto móviles "
+"como de escritorio."
+msgstr "Davidvu.co is my personal portfolio about web development, he you can contact me for freelance mobile and desktop jobs."
+
+#: templates/website/base_home.html:61
+msgid "Me especializo  en el modelado"
+msgstr "Specializing in the"
+
+#: templates/website/base_home.html:61
+msgid "y en el desarrollo profesional de sitios web con"
+msgstr "model and professional website development of"
+
+#: templates/website/base_home.html:70
+msgid "Lo que hago"
+msgstr "What I do"
+
+#: templates/website/base_home.html:72
+msgid "Soy"
+msgstr "I'm"
+
+#: templates/website/base_home.html:72
+msgid "desarrollador web"
+msgstr "web developer"
+
+#: templates/website/base_home.html:72 templates/website/base_home.html:73
+msgid "y"
+msgstr "and"
+
+#: templates/website/base_home.html:72
+msgid "artista 3D"
+msgstr "3D artist"
+
+#: templates/website/base_home.html:72
+msgid "freelance que hace uso de herramientas y librerias de código abierto"
+msgstr "freelance that use open source tools and libraries"
+
+#: templates/website/base_home.html:73
+msgid "para crear"
+msgstr "to build"
+
+#: templates/website/base_home.html:73
+msgid "aplicaciones"
+msgstr "applications"
+
+#: templates/website/base_home.html:73
+msgid "sitios web"
+msgstr "web sites"
+
+#: templates/website/base_home.html:73
+msgid ""
+"que cumplan estándares, fáciles de actualizar y optimizados para los "
+"buscadores"
+msgstr "that meet standards, easy to update and optimized for search engine"
+
+#: templates/website/base_home.html:80
+msgid "Clientes"
+msgstr "Clients"
+
+#: templates/website/base_home.html:82
+msgid ""
+"Mis clientes son agencias de publicidad o empresas independientes que ya "
+"cuentan con el diseño de un"
+msgstr "My clients are design agencies, freelancers who already have a design of a"
+
+#: templates/website/base_home.html:82
+msgid "sitio web"
+msgstr "web site"
+
+#: templates/website/base_home.html:83
+msgid "y necesitan programar un sitio web completamente funcional"
+msgstr "but need it to coded into a fully working website"
+
+#: templates/website/base_home.html:101
+msgid "Contáctame"
+msgstr "Contact"
+
+#: templates/website/base_home.html:105
+msgid ""
+"Un correo electrónico es la forma más fácil y rápida de contactarme, "
+"escríbeme y así podremos trabajar juntos. Un saludo!"
+msgstr "An email it's the easy way to contact me, writeme and we will work together. Cheers!"
+
+#: templates/website/base_home.html:108
+msgid "Escribir"
+msgstr "Email me"
+
+#: templates/website/header.html:6
+msgid "Ir al inicio"
+msgstr "Home"
+
+#: templates/website/header.html:10
+msgid "Portafolio"
+msgstr "Portfolio"
+
+#: templates/website/header.html:11
+msgid "Acerca de"
+msgstr "About"
+
+#: templates/website/header.html:
+msgid "Contacto"
+msgstr "Contact"
+
+#: tinymce/views.py:71
+msgid "Error running spellchecker"
+msgstr ""
