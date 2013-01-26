@@ -1,18 +1,18 @@
 {% extends "website/base.html" %}
+{% load i18n %}	
 
 {% block title %}
-Portafolio David Velásquez :: Desarrollo web :: Modelado y animación 3D
+{% trans "Portafolio David Velásquez :: Desarrollo web :: Modelado y animación 3D" %}
 {% endblock %}
 
 {% block description %}
-Serie de proyectos que he desarrollado durante varios años de trabajo, siempre tratando de tener un código limpio y organizado.
+{% trans "Serie de proyectos tanto de desarrollo web como de modelado 3D que he realizado durante los últimos años." %}
 {% endblock %}
 
 {% block content %}
-	<h3>Portafolio</h3>
+	<h3>{% trans "Portafolio desarrollo web y modelado 3D" %}</h3>
 	<p>
-		Serie de proyectos que he desarrollado durante varios años de trabajo, siempre tratando de tener un código limpio y organizado.
-		Usando adecuadamenta las cantidad necesaria de etiquetas HTML para obtener un buen <b>SEO</b>. <a href="mailto:david@davidvu.co">Estoy disponible para trabajo freelance</a>
+		{% trans "Serie de proyectos tanto de desarollo web como de modelado 3D que realizado durante varios años de continuo aprendizaje, siempre tratando de ser efectivo y organizado. Usando adecuadamente las cantidad necesaria de etiquetas HTML para obtener un buen" %} <b>SEO</b>. {% trans "Si te interesa trabajar conmigo, por favor no lo dudes" %}, <a href="mailto:david@davidvu.co">{% trans "estoy disponible para trabajo freelance" %}</a>
 	</p>
 	{% if all_companies %}
 		<div id="portfolio-list">
@@ -24,11 +24,11 @@ Serie de proyectos que he desarrollado durante varios años de trabajo, siempre 
 				
 			    	<div class="three columns end">
 			    		<div class="portfolio-preview">
-				        	<a href="/portafolio/{{ company.slug }}/" title="Ver desarrollo {{ company.company_name }}">
+				        	<a href="/portafolio/{{ company.slug }}/" title="{% trans 'Ver desarrollo' %} {{ company.company_name }}">
 				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />
 				        	</a>
 				        	<p class="company-name">
-				        		<a href="/portafolio/{{ company.slug }}/" title="Ver desarrollo">
+				        		<a href="/portafolio/{{ company.slug }}/" title="{% trans 'Ver desarrollo' %}">
 				        			{{ company.company_name }}
 				        		</a>
 				        	</p>
@@ -46,6 +46,6 @@ Serie de proyectos que he desarrollado durante varios años de trabajo, siempre 
 			{% endfor %}
 		</div>	
 	{% else %}
-	    <p>No hay portafolio disponible.</p>
+	    <p>{% trans "No hay portafolio disponible." %}</p>
 	{% endif %}
 {% endblock %}

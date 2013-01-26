@@ -1,28 +1,30 @@
+{% load i18n %}	
 	<!-- Footer -->
 	  <div id="footer-container">
 	  	  <div class="row">
 	  	  		<div class="four columns">
-	  	  			<h4>Acerca de</h4>
+	  	  			<h4>{% trans "Acerca de" %}</h4>
 	  	  			<p>
-	  	  				Desarrollador web, apasionado por el modelado y la animación 3D, fiel creyente y usuario del software libre.
-	  	  				Recientemente enfocado en el desarrollo móvil.<br />
-	  	  				Actualmente estudio el desarrollo de aplicaciones en Java para Android...
-	  	  				<a href="/pagina/acerca-de">{Más}</a>
+	  	  				{% blocktrans %}Desarrollador web, apasionado por el modelado y la animación 3D, fiel creyente y usuario del software libre.
+	  	  				Recientemente enfocado en el desarrollo móvil.{% endblocktrans %}
+						<br />
+	  	  				{% trans "Actualmente estudio el desarrollo de aplicaciones en Java para Android" %}...
+	  	  				<a href="/pagina/acerca-de">{% trans "Continuar" %}</a>
 	  	  			</p>
 	  	  		</div>
 	  	  		<div class="four columns">
-	  	  			<h4>Servicios</h4>
+	  	  			<h4>{% trans "Servicios" %}</h4>
 	  	  			<p>
-	  	  				<span>HTML5</span> / CSS3 / <span>PHP</span> / Python / <span>Wordpress</span> / dJango / <span>CakePHP</span> / SEO / <span>Diseño web <i>Responsive</i></span> /
-	  	  				Desarrollo web móvil / <span>MySQL</span>
+	  	  				<span>HTML5</span> / CSS3 / <span>PHP</span> / Python / <span>Wordpress</span> / dJango / <span>CakePHP</span> / SEO / <span>Responsive</span> /
+	  	  				{% trans "Desarrollo web móvil" %} / <span>{% trans "MySQL" %}</span>
 	  	  				<br />
-	  	  				<span>Aplicaciones web</span> /
-	  	  				Aplicaciones móviles /
-	  	  				<span>Tienda en línea</span> / 3D
+	  	  				<span>{% trans "Aplicaciones web" %}</span> /
+	  	  				{% trans "Aplicaciones móviles" %} /
+	  	  				<span>{% trans "Tienda en línea" %}</span> / 3D
 	  	  			</p>
 	  	  		</div>
 	  	  		<div class="four columns">
-	  	  			<h4>Enlaces de interés</h4>
+	  	  			<h4>{% trans "Enlaces de interés" %}</h4>
 				      	<ul class="link-list">
 				      		<li><a href="http://blenderes.com" target="_blank">BlenderEs</a></li>
 				      		<li><a href="http://www.djangoproject.com/" target="_blank">dJango</a></li>
@@ -41,10 +43,10 @@
 		        </div>
 		        <div class="six columns">
 		          <ul class="link-list right">
-		            <li><a href="#">Portafolio</a></li>
-		            <li><a href="/pagina/acerca-de">Acerca de</a></li>
+		            <li><a href="/portafolio">{% trans "Portafolio" %}</a></li>
+		            <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>
 		            <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
-		            <li><a href="#">Contacto</a></li>
+		            <li><a href="/pagina/contacto">{% trans "Contacto" %}</a></li>
 		          </ul>
 		        </div>
 		      </div>

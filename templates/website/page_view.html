@@ -1,17 +1,30 @@
 {% extends "website/base.html" %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}	
 
 {% block title %}
-{{ page.title }} David Velásquez | Desarrollador web dJango - Cakephp | Modelador 3D 
+{{ page.title }} David Velásquez | {% trans "Desarrollador web" %} - dJango - Cakephp | {% trans "Modelador 3D" %} 
 {% endblock %}
 
 {% block description %}
-Mi nombre es David Velásquez y soy desarrollador web freelance. Programo en HTML5, PHP, Python, CSS y aprovecho mucho el uso de librerías y frameworks como CakePHP, Django, jQuery, Modernizr... que agilizan el trabajo. También me dedico al modelado y la animación 3D usando Blender.
+{% trans "Mi nombre es David Velásquez y soy desarrollador web freelance. Programo en HTML5, PHP, Python, CSS y aprovecho mucho el uso de librerías y frameworks como CakePHP, Django, jQuery, Modernizr... que agilizan el trabajo. También me dedico al modelado y la animación 3D usando Blender." %}
 {% endblock %}
 
 {% block content %}
-	<h3>{{ page.title }}</h3>
+	<h3>
+		{% if LANGUAGE_CODE == 'en' %}
+			{{ page.title_en }}
+		{% else %}
+			{{ page.title }}
+		{% endif %}
+	</h3>
 	<div id="page-content">
-		{{ page.body|safe }}
+		{% if LANGUAGE_CODE == 'en' %}
+			{{ page.body_en|safe }}
+		{% else %}
+			{{ page.body|safe }}
+		{% endif %}
+		
 	</div>
 	{% if form %}
 		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}

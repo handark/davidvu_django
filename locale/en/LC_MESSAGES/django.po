@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 15:50-0500\n"
+"POT-Creation-Date: 2013-01-26 13:18-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,13 +29,17 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: pages/models.py:16
-msgid "mensaje"
-msgstr "message"
-
 #: pages/models.py:17
-msgid "correo"
-msgstr "email"
+msgid "Asunto"
+msgstr "Subject"
+
+#: pages/models.py:18
+msgid "Mensaje"
+msgstr "Message"
+
+#: pages/models.py:19
+msgid "Correo"
+msgstr "Email"
 
 #: pages/views.py:42
 msgid "Por favor llene todos los campos."
@@ -44,6 +48,14 @@ msgstr "Please fill all the inputs"
 #: pages/views.py:58
 msgid "Sígueme en @zeroblend"
 msgstr "Followme @zeroblend"
+
+#: templates/404.html:6
+msgid "Lo sentimos, página no encontrada."
+msgstr "Sorry, page not found"
+
+#: templates/404.html:8 templates/website/header.html:6
+msgid "Ir al inicio"
+msgstr "Home"
 
 #: templates/admin/base_site.html:4
 msgid "DavidVU site admin"
@@ -100,7 +112,9 @@ msgid ""
 "Davidvu.co es mi portafolio personal sobre desarrollo y programación web, "
 "acá puedes contactarme para realizar desarrollos freelance tanto móviles "
 "como de escritorio."
-msgstr "Davidvu.co is my personal portfolio about web development, he you can contact me for freelance mobile and desktop jobs."
+msgstr ""
+"Davidvu.co is my personal portfolio about web development, he you can "
+"contact me for freelance mobile and desktop jobs."
 
 #: templates/website/base_home.html:61
 msgid "Me especializo  en el modelado"
@@ -160,7 +174,8 @@ msgstr "Clients"
 msgid ""
 "Mis clientes son agencias de publicidad o empresas independientes que ya "
 "cuentan con el diseño de un"
-msgstr "My clients are design agencies, freelancers who already have a design of a"
+msgstr ""
+"My clients are design agencies, freelancers who already have a design of a"
 
 #: templates/website/base_home.html:82
 msgid "sitio web"
@@ -178,28 +193,172 @@ msgstr "Contact"
 msgid ""
 "Un correo electrónico es la forma más fácil y rápida de contactarme, "
 "escríbeme y así podremos trabajar juntos. Un saludo!"
-msgstr "An email it's the easy way to contact me, writeme and we will work together. Cheers!"
+msgstr ""
+"An email it's the easy way to contact me, writeme and we will work together. "
+"Cheers!"
 
 #: templates/website/base_home.html:108
 msgid "Escribir"
 msgstr "Email me"
 
-#: templates/website/header.html:6
-msgid "Ir al inicio"
-msgstr "Home"
-
-#: templates/website/header.html:10
-msgid "Portafolio"
-msgstr "Portfolio"
-
-#: templates/website/header.html:11
+#: templates/website/footer.html:6 templates/website/footer.html.py:47
+#: templates/website/header.html:17
 msgid "Acerca de"
 msgstr "About"
 
-#: templates/website/header.html:
+#: templates/website/footer.html:8
+msgid ""
+"Desarrollador web, apasionado por el modelado y la animación 3D, fiel "
+"creyente y usuario del software libre.\n"
+"\t  \t  \t\t\t\tRecientemente enfocado en el desarrollo móvil."
+msgstr ""
+"Web developer, with passion for 3D modeling and animation, believer and user "
+"of free software.\n"
+"\t  \t  \t\t\t\tRecently focused on mobile development"
+
+#: templates/website/footer.html:11
+msgid "Actualmente estudio el desarrollo de aplicaciones en Java para Android"
+msgstr "Currently study the development of Java applications for Android"
+
+#: templates/website/footer.html:12
+msgid "Continuar"
+msgstr "Continue"
+
+#: templates/website/footer.html:16
+msgid "Servicios"
+msgstr "Services"
+
+#: templates/website/footer.html:19
+msgid "Desarrollo web móvil"
+msgstr "Web mobile developer"
+
+#: templates/website/footer.html:19
+msgid "MySQL"
+msgstr ""
+
+#: templates/website/footer.html:21
+msgid "Aplicaciones web"
+msgstr "Web applications"
+
+#: templates/website/footer.html:22
+msgid "Aplicaciones móviles"
+msgstr "Mobile applications"
+
+#: templates/website/footer.html:23
+msgid "Tienda en línea"
+msgstr "Online Shop"
+
+#: templates/website/footer.html:27
+msgid "Enlaces de interés"
+msgstr "Links"
+
+#: templates/website/footer.html:46 templates/website/header.html:16
+#: templates/website/portfolio_detail.html:5
+msgid "Portafolio"
+msgstr "Portfolio"
+
+#: templates/website/footer.html:49 templates/website/header.html:19
 msgid "Contacto"
 msgstr "Contact"
+
+#: templates/website/header.html:24
+msgid "Sígueme en Twitter"
+msgstr "Followme @zeroblend"
+
+#: templates/website/header.html:25
+msgid "Suscríbete al canal de YouTube"
+msgstr "Subscribe to the YouTube channel"
+
+#: templates/website/page_view.html:6
+msgid "Desarrollador web"
+msgstr "Web developer"
+
+#: templates/website/page_view.html:6
+msgid "Modelador 3D"
+msgstr "3D modeler"
+
+#: templates/website/page_view.html:10
+msgid ""
+"Mi nombre es David Velásquez y soy desarrollador web freelance. Programo en "
+"HTML5, PHP, Python, CSS y aprovecho mucho el uso de librerías y frameworks "
+"como CakePHP, Django, jQuery, Modernizr... que agilizan el trabajo. También "
+"me dedico al modelado y la animación 3D usando Blender."
+msgstr ""
+"My name is David Velásquez and I'm a freelance web developer. I program in "
+"HTML5, PHP, Python, CSS and I take much the use of libraries and frameworks "
+"ike CakePHP, Django, jQuery, Modernizr... that streamline the job. AlsoI "
+"work in 3D modeling and animation using Blender."
+
+#: templates/website/portfolio.html:5
+msgid "Portafolio David Velásquez :: Desarrollo web :: Modelado y animación 3D"
+msgstr "David Velásquez Portfolio :: Web development :: 3D Model and animation"
+
+#: templates/website/portfolio.html:9
+msgid ""
+"Serie de proyectos tanto de desarrollo web como de modelado 3D que he "
+"realizado durante los últimos años."
+msgstr ""
+"Portfolio of web development projects and 3D modeling that I have done in "
+"the recent years"
+
+#: templates/website/portfolio.html:13
+msgid "Portafolio desarrollo web y modelado 3D"
+msgstr "Portfolio of web development and 3D modeling"
+
+#: templates/website/portfolio.html:15
+msgid ""
+"Serie de proyectos tanto de desarollo web como de modelado 3D que realizado "
+"durante varios años de continuo aprendizaje, siempre tratando de ser "
+"efectivo y organizado. Usando adecuadamente las cantidad necesaria de "
+"etiquetas HTML para obtener un buen"
+msgstr ""
+"Portfolio of web development projects and 3D modeling that I have done for "
+"several years of continuous learning, always trying to be effective and "
+"organized. Suitably using the required amount of HTML tags to get a good"
+
+#: templates/website/portfolio.html:15
+msgid "Si te interesa trabajar conmigo, por favor no lo dudes"
+msgstr "If you’re interested in working together, please don’t hesitate"
+
+#: templates/website/portfolio.html:15
+msgid "estoy disponible para trabajo freelance"
+msgstr " I’m available for freelance work"
+
+#: templates/website/portfolio.html:27 templates/website/portfolio.html:31
+msgid "Ver desarrollo"
+msgstr "View development"
+
+#: templates/website/portfolio.html:49
+msgid "No hay portafolio disponible."
+msgstr "No portfolio available"
+
+#: templates/website/portfolio_detail.html:9
+msgid "Muestra del desarrollo"
+msgstr "View development of"
+
+#: templates/website/portfolio_detail.html:19
+msgid "Visitar sitio"
+msgstr "View website"
+
+#: templates/website/portfolio_detail.html:29
+msgid "Ver imagen"
+msgstr "View image"
+
+#: templates/website/portfolio_detail.html:36
+msgid "Mi trabajo"
+msgstr "What I do"
+
+#: templates/website/portfolio_detail.html:38
+msgid "Año"
+msgstr "Year"
+
+#: templates/website/portfolio_detail.html:41
+msgid "Diseño"
+msgstr "Design by"
 
 #: tinymce/views.py:71
 msgid "Error running spellchecker"
 msgstr ""
+
+#~ msgid "Más"
+#~ msgstr "More"
