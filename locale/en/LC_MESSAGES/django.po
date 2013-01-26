@@ -43,7 +43,7 @@ msgstr "Email"
 
 #: pages/views.py:42
 msgid "Por favor llene todos los campos."
-msgstr "Please fill all the inputs"
+msgstr "Please fill all the fields"
 
 #: pages/views.py:58
 msgid "Sígueme en @zeroblend"
