@@ -1,20 +1,26 @@
 {% load static %}
 {% get_static_prefix as STATIC_PREFIX %}
 {% get_media_prefix as MEDIA_PREFIX %}
+{% load i18n %}
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>DavidVU - Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango</title>
+	<title>{% block title %}{% trans "DavidVU :: Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango" %}{% endblock %}</title>
+	
+	{% trans "Davidvu.co es mi portafolio personal sobre desarrollo y programación web, acá puedes contactarme para realizar desarrollos freelance tanto móviles como de escritorio." as description %}
+	
+	<meta name="description" content="{% block description %}{{ description }}{% endblock %}">
+	<meta name="author" content="Davidvu | david@davidvu.co">
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="{{ STATIC_PREFIX }}stylesheets/app.css">
@@ -23,16 +29,15 @@
 	
 	{% block extrahead %}
 	{% endblock %}
-	
+
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500,700|Amaranth' rel='stylesheet' type='text/css'>
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 </head>
 <body>
-
+	
 	{% include "website/header.html" %}
 	  
 	  
@@ -42,7 +47,7 @@
 	  <div class="row">
 	    <div class="twelve columns">
 	      <div id="slider">
-	        <img src="{{ STATIC_PREFIX }}images/hana_wordpress_slide.jpg" />
+	        <img src="{{ STATIC_PREFIX }}images/hana_wordpress_slide.jpg" alt="Sitio web Hana Salud y Bienestar en Wordpress" />
 	        <img src="http://placehold.it/1000x400&text=[img 2]" />
 	        <img src="http://placehold.it/1000x400&text=[img 3]" />
 	        <img src="http://placehold.it/1000x400&text=[img 4]" />
@@ -53,7 +58,7 @@
 	  
 	  <div class="row frase">
 	  	<div class="twelve columns">
-	  		<h1>Me especializo en el desarrollo profesional de sitios web con <span>HTML5</span>, <span>CSS3</span>, <span>dJango</span>, <span>Wordpress</span>, <span>CakePHP</span>, <span>Responsive</span>.</h1>
+	  		<h1>{% trans "Me especializo  en el modelado" %} <span>3D</span> {% trans "y en el desarrollo profesional de sitios web con" %} <span>HTML5</span>, <span>CSS3</span>, <span>dJango</span>, <span>Wordpress</span>, <span>CakePHP</span>, <span>Responsive</span>.</h1>
 	  	</div>
 	  </div>
 	  
@@ -62,25 +67,25 @@
 	  <div class="row">
 	  
 	    <div class="four columns">
-	      <h4>Lo que hago</h4>
+	      <h4>{% trans "Lo que hago" %}</h4>
 	      <p>
-	      	Soy <b>desarrollador web</b> y <b>artista 3D</b> freelance que hace uso de herramientas y librerias de <b>código abierto</b>,
-	      	para crear <b>aplicaciones</b> y <b>sitios web</b> que cumplan estándares, fáciles de actualizar y optimizados para los buscadores <b>(SEO)</b>.
+	      	{% trans "Soy" %} <strong>{% trans "desarrollador web" %}</strong> {% trans "y" %} <strong>{% trans "artista 3D" %}</strong> {% trans "freelance que hace uso de herramientas y librerias de código abierto" %},
+	      	{% trans "para crear" %} <strong>{% trans "aplicaciones" %}</strong> {% trans "y" %} <strong>{% trans "sitios web" %}</strong> {% trans "que cumplan estándares, fáciles de actualizar y optimizados para los buscadores" %} <stron>(SEO)</strong>.
 	      	
 	      </p>
 	      
 	    </div>
 	    
 	    <div class="four columns">
-	      <h4>Clientes</h4>
+	      <h4>{% trans "Clientes" %}</h4>
 	      <p>
-	      	Mis clientes son agencias de publicidad o empresas independientes que ya cuentan con el diseño
-	      	y necesitan programar un sitio web completamente funcional.
+	      	{% trans "Mis clientes son agencias de publicidad o empresas independientes que ya cuentan con el diseño de un" %} <strong>{% trans "sitio web" %}</strong>
+	      	{% trans "y necesitan programar un sitio web completamente funcional" %}.
 	      </p>
 	    </div>
 	    
 	    <div class="four columns">
-	    	<h4>Twitter</h4>
+	    	<h4>Tweets @zeroblend</h4>
 	    	{% block twitter %}
 		    {% endblock %}
 	    </div>
@@ -93,14 +98,14 @@
 	    <div class="twelve columns">
 	    
 	      <div class="panel">
-	        <h4>Contáctame</h4>
+	        <h4>{% trans "Contáctame" %}</h4>
 	            
 	        <div class="row">
 	          <div class="nine columns">
-	            <p>Un correo electrónico es la forma más fácil y rápida de contactarme, escríbeme y así podremos trabajar juntos. Un saludo!</p>
+	            <p>{% trans "Un correo electrónico es la forma más fácil y rápida de contactarme, escríbeme y así podremos trabajar juntos. Un saludo!" %}</p>
 	          </div>
 	          <div class="three columns">
-	            <a href="mailto:david@davidvu.co" class="radius button right">Escribir</a>
+	            <a href="mailto:david@davidvu.co" class="radius button right">{% trans "Escribir" %}</a>
 	          </div>
 	        </div>
 	      </div>
@@ -109,6 +114,6 @@
 	  </div>
 	  
 	  {% include "website/footer.html" %}
-	  
+
 </body>
 </html>

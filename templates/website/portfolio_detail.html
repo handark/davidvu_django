@@ -1,5 +1,13 @@
 {% extends "website/base.html" %}
 
+{% block title %}
+Portafolio :: {{ company.company_name }}
+{% endblock %}
+
+{% block description %}
+Muestra del desarrollo {{ company.company_name }} 
+{% endblock %}
+
 {% block content %}
 
 	<div class="row portfolio-header">

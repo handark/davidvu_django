@@ -1,7 +1,25 @@
 {% extends "website/base.html" %}
+
+{% block title %}
+{{ page.title }} David Velásquez | Desarrollador web dJango - Cakephp | Modelador 3D 
+{% endblock %}
+
+{% block description %}
+Mi nombre es David Velásquez y soy desarrollador web freelance. Programo en HTML5, PHP, Python, CSS y aprovecho mucho el uso de librerías y frameworks como CakePHP, Django, jQuery, Modernizr... que agilizan el trabajo. También me dedico al modelado y la animación 3D usando Blender.
+{% endblock %}
+
 {% block content %}
 	<h3>{{ page.title }}</h3>
 	<div id="page-content">
 		{{ page.body|safe }}
 	</div>
+	{% if form %}
+		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+		<div id="contact-form">
+			<form action="/contact/" method="post">{% csrf_token %}
+				{{ form.as_p }}
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+	{% endif %}
 {% endblock %}

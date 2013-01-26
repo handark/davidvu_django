@@ -4253,21 +4253,33 @@ hr {
   padding-top: 20px;
 }
 
+/* line 58, ../sass/_style.scss */
+.social ul.link-list {
+  margin: 27px 0;
+  height: 40px;
+}
+/* line 62, ../sass/_style.scss */
+.social ul.link-list li {
+  float: right;
+  line-height: 38px;
+  margin-left: 0;
+}
+
 /* -----------------------------------------
    Inicio
 ----------------------------------------- */
-/* line 61, ../sass/_style.scss */
+/* line 74, ../sass/_style.scss */
 .frase {
   border-bottom: 1px solid #ff7301;
   border-top: 1px solid #ff7301;
   margin-bottom: 30px;
 }
-/* line 66, ../sass/_style.scss */
+/* line 79, ../sass/_style.scss */
 .frase h1 {
   font-size: 2.5em;
   text-align: center;
 }
-/* line 70, ../sass/_style.scss */
+/* line 83, ../sass/_style.scss */
 .frase h1 span {
   color: #ff7301;
 }
@@ -4275,17 +4287,17 @@ hr {
 /* -----------------------------------------
    Portafolio
 ----------------------------------------- */
-/* line 82, ../sass/_style.scss */
+/* line 95, ../sass/_style.scss */
 #portfolio-list .portfolio-preview {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
   padding: 5px;
 }
-/* line 87, ../sass/_style.scss */
+/* line 100, ../sass/_style.scss */
 #portfolio-list .portfolio-preview:hover {
   border: 1px solid white;
 }
-/* line 91, ../sass/_style.scss */
+/* line 104, ../sass/_style.scss */
 #portfolio-list .portfolio-preview p.company-name {
   margin-bottom: 0;
   text-align: center;
@@ -4293,24 +4305,24 @@ hr {
   text-shadow: 1px 0px 0 white;
 }
 
-/* line 105, ../sass/_style.scss */
+/* line 118, ../sass/_style.scss */
 .portfolio-header h3 {
   margin: 0;
 }
-/* line 109, ../sass/_style.scss */
+/* line 122, ../sass/_style.scss */
 .portfolio-header .url {
   margin-top: 7px;
 }
 
-/* line 115, ../sass/_style.scss */
+/* line 128, ../sass/_style.scss */
 .description h4 {
   margin: 0;
 }
-/* line 119, ../sass/_style.scss */
+/* line 132, ../sass/_style.scss */
 .description .thumbs {
   margin-top: 10px;
 }
-/* line 122, ../sass/_style.scss */
+/* line 135, ../sass/_style.scss */
 .description .thumbs img {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
