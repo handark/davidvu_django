@@ -19,7 +19,10 @@
 			<h3>{{ company.company_name }}</h3>
 		</div>
 		<div class="five columns text-right url">
-			{% trans "Visitar sitio" %}: <a href="{{ company.url }}" title="{% trans 'Visitar sitio' %} {{ company.company_name }}" target="_target">{{ company.url }}</a>
+			{% if company.category.name == 'Web' %}
+				{% trans "Visitar sitio" %}: <a href="{{ company.url }}" title="{% trans 'Visitar sitio' %} {{ company.company_name }}" target="_target">{{ company.url }}</a>
+			{% endif %}
+			
 		</div>
 	</div>
 	<hr />
@@ -45,8 +48,10 @@
 			<h4>{% trans "Año" %}</h4>
 			{{ company.year }}
 			<br /><br />
-			<h4>{% trans "Diseño" %}</h4>
-			{{ company.design }}
+			{% if company.category.name == 'Web' %}
+				<h4>{% trans "Diseño" %}</h4>
+				{{ company.design }}
+			{% endif %}
 			<br /><br />
 		</div>
 	</div>

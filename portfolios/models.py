@@ -16,11 +16,11 @@ class Company(models.Model):
     company_name = models.CharField('Company', max_length=200)
     slug = models.SlugField(unique=True)
     year = models.CharField(max_length=4)
-    design = models.CharField(max_length=50)
+    design = models.CharField(max_length=50, blank=True)
     #description = models.TextField()
     description = tinymce_models.HTMLField()
     description_en = tinymce_models.HTMLField()
-    url = models.URLField()
+    url = models.URLField(blank=True)
     pub_date = models.DateTimeField('Date published');
     category = models.ForeignKey(Category)
     

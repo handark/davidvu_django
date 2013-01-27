@@ -16,6 +16,7 @@
 	</p>
 	{% if all_companies %}
 		<div id="portfolio-list">
+			<h4>{% trans "Desarrollos web" %}</h4>
 		    {% for company in all_companies %}
 		    
 				{% if forloop.counter0|divisibleby:"4" %}
@@ -44,6 +45,37 @@
 			    {% endif %}
 			    
 			{% endfor %}
+			
+			<h4>3D</h4>
+			{% for company in all_models %}
+		    
+				{% if forloop.counter0|divisibleby:"4" %}
+					<div class="row">
+				{% endif %}
+				
+			    	<div class="three columns end">
+			    		<div class="portfolio-preview">
+				        	<a href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver modelo 3D' %} {{ company.company_name }}">
+				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />
+				        	</a>
+				        	<p class="company-name">
+				        		<a href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver modelo 3D' %}">
+				        			{{ company.company_name }}
+				        		</a>
+				        	</p>
+				        </div>
+			        </div>
+			        
+			    {% if forloop.counter|divisibleby:"4" %}  
+			    	</div>
+			    {% endif %}
+			    
+			    {% if forloop.last and not forloop.counter|divisibleby:"4" %}  
+			    	</div>
+			    {% endif %}
+			    
+			{% endfor %}
+			
 		</div>	
 	{% else %}
 	    <p>{% trans "No hay portafolio disponible." %}</p>

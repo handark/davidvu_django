@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-27 13:38-0500\n"
+"POT-Creation-Date: 2013-01-27 15:16-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,11 +103,11 @@ msgstr ""
 msgid "Unknown content"
 msgstr ""
 
-#: templates/website/base.html:18 templates/website/base_home.html:18
+#: templates/website/base.html:19 templates/website/base_home.html:18
 msgid "DavidVU :: Desarrollo Web Freelance HTML5, CSS3, Wordpress, dJango"
 msgstr "DavidVU :: Freelance web developer HTML5, CSS3, Wordpress, dJango"
 
-#: templates/website/base.html:19 templates/website/base_home.html:20
+#: templates/website/base.html:20 templates/website/base_home.html:20
 msgid ""
 "Davidvu.co es mi portafolio personal sobre desarrollo y programación web, "
 "acá puedes contactarme para realizar desarrollos freelance tanto móviles "
@@ -269,15 +269,15 @@ msgstr "Followme @zeroblend"
 msgid "Suscríbete al canal de YouTube"
 msgstr "Subscribe to the YouTube channel"
 
-#: templates/website/page_view.html:6
+#: templates/website/page_view.html:5
 msgid "Desarrollador web"
 msgstr "Web developer"
 
-#: templates/website/page_view.html:6
+#: templates/website/page_view.html:5
 msgid "Modelador 3D"
 msgstr "3D modeler"
 
-#: templates/website/page_view.html:10
+#: templates/website/page_view.html:9
 msgid ""
 "Mi nombre es David Velásquez y soy desarrollador web freelance. Programo en "
 "HTML5, PHP, Python, CSS y aprovecho mucho el uso de librerías y frameworks "
@@ -324,11 +324,19 @@ msgstr "If you’re interested in working together, please don’t hesitate"
 msgid "estoy disponible para trabajo freelance"
 msgstr " I’m available for freelance work"
 
-#: templates/website/portfolio.html:27 templates/website/portfolio.html:31
+#: templates/website/portfolio.html:19
+msgid "Desarrollos web"
+msgstr "Web developments"
+
+#: templates/website/portfolio.html:28 templates/website/portfolio.html:32
 msgid "Ver desarrollo"
 msgstr "View development"
 
-#: templates/website/portfolio.html:49
+#: templates/website/portfolio.html:58 templates/website/portfolio.html:62
+msgid "Ver modelo 3D"
+msgstr "View 3D model"
+
+#: templates/website/portfolio.html:81
 msgid "No hay portafolio disponible."
 msgstr "No portfolio available"
 
@@ -340,19 +348,19 @@ msgstr "View development of"
 msgid "Visitar sitio"
 msgstr "View website"
 
-#: templates/website/portfolio_detail.html:33
+#: templates/website/portfolio_detail.html:35
 msgid "Ver imagen"
 msgstr "View image"
 
-#: templates/website/portfolio_detail.html:40
+#: templates/website/portfolio_detail.html:42
 msgid "Mi trabajo"
 msgstr "What I do"
 
-#: templates/website/portfolio_detail.html:46
+#: templates/website/portfolio_detail.html:48
 msgid "Año"
 msgstr "Year"
 
-#: templates/website/portfolio_detail.html:49
+#: templates/website/portfolio_detail.html:52
 msgid "Diseño"
 msgstr "Design by"
 
