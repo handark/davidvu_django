@@ -24,11 +24,11 @@
 				
 			    	<div class="three columns end">
 			    		<div class="portfolio-preview">
-				        	<a href="/portafolio/{{ company.slug }}/" title="{% trans 'Ver desarrollo' %} {{ company.company_name }}">
+				        	<a href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver desarrollo' %} {{ company.company_name }}">
 				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />
 				        	</a>
 				        	<p class="company-name">
-				        		<a href="/portafolio/{{ company.slug }}/" title="{% trans 'Ver desarrollo' %}">
+				        		<a href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver desarrollo' %}">
 				        			{{ company.company_name }}
 				        		</a>
 				        	</p>

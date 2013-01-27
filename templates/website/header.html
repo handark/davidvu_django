@@ -4,7 +4,7 @@
   
 	  <div class="row">
 	    <div class="three columns">
-	      <h1><a href="/" alt="{% trans 'Ir al inicio' %}" title="{% trans 'Ir al inicio' %}">
+	      <h1><a href="{% url home %}" alt="{% trans 'Ir al inicio' %}" title="{% trans 'Ir al inicio' %}">
 			{% if LANGUAGE_CODE == 'en' %}
 				<img src="{{ STATIC_PREFIX }}images/davidvu_webdeveloper_digitalartist_logo.png" alt="Logo" />
 			{% else %}
@@ -14,10 +14,11 @@
 	    </div>
 	    <div class="eight columns">
 	      <ul class="nav-bar right">
-	        <li><a href="/portafolio">{% trans "Portafolio" %}</a></li>
-	        <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>
+	        <li><a href="{% url portfolio-index %}">{% trans "Portafolio" %}</a></li>
+	        <li><a href="{% url page-detail 'acerca-de' %}">{% trans "Acerca de" %}</a></li>
+	        <!-- <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>  -->
 	        <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
-	        <li><a href="/pagina/contacto">{% trans "Contacto" %}</a></li>
+	        <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
 	      </ul>
 	    </div>
 	    <div class="one columns social text-right">

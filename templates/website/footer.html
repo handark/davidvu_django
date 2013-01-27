@@ -43,10 +43,10 @@
 		        </div>
 		        <div class="six columns">
 		          <ul class="link-list right">
-		            <li><a href="/portafolio">{% trans "Portafolio" %}</a></li>
-		            <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>
+		            <li><a href="{% url portfolio-index %}">{% trans "Portafolio" %}</a></li>
+		            <li><a href="{% url page-detail 'acerca-de' %}">{% trans "Acerca de" %}</a></li>
 		            <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
-		            <li><a href="/pagina/contacto">{% trans "Contacto" %}</a></li>
+		            <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
 		          </ul>
 		        </div>
 		      </div>
