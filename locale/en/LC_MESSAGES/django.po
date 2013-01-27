@@ -130,7 +130,7 @@ msgstr "What I do"
 
 #: templates/website/base_home.html:80
 msgid "Soy"
-msgstr "I'm"
+msgstr "I'm freelance"
 
 #: templates/website/base_home.html:80
 msgid "desarrollador web"
@@ -146,7 +146,7 @@ msgstr "3D artist"
 
 #: templates/website/base_home.html:80
 msgid "freelance que hace uso de herramientas y librerias de código abierto"
-msgstr "freelance that use open source tools and libraries"
+msgstr "that use open source tools and libraries"
 
 #: templates/website/base_home.html:81
 msgid "para crear"
