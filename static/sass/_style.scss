@@ -5,6 +5,7 @@
 :: Inicio
 :: Portafolio
 :: Errores
+:: Media Queries
 
 */
 
@@ -29,7 +30,26 @@ hr{
 
 #nav{
 	float: right;
+	
+	a{
+		-webkit-transition:text-shadow 0.5s ease-in-out;
+	       -moz-transition:text-shadow 0.5s ease-in-out;
+	         -o-transition:text-shadow 0.5s ease-in-out;
+	        -ms-transition:text-shadow 0.5s ease-in-out;
+	            transition:text-shadow 0.5s ease-in-out;    
+	    
+	    text-shadow: 0px 0px 0px $naranja;
+	     
+		&.active{
+			text-shadow: 0px 0px 2px $naranja;
+		}
+		
+		&:hover{
+			color: #000 !important;
+		}
+	}
 }
+
 #footer-container{
 	background: url(../images/bg_footer.png);
 	margin-top: 40px;
@@ -98,16 +118,33 @@ hr{
 ----------------------------------------- */
 
 #portfolio-list{
-	
+
 	.portfolio-preview{
 		background: rgba(240, 126, 0, 0.2);
 		border:1px solid $naranja;
 		margin-bottom: 10px;
 		padding: 5px;
 		text-align: center;
+
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		transition: 1s;
+	
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		
 		
 		&:hover{
 			border:1px solid $white;
+
+			-webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px $naranja;
+			   -moz-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px $naranja;
+			        box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px $naranja;
+		
+			-webkit-border-radius: .5em;
+			   -moz-border-radius: .5em;
+			        border-radius: .5em;
 		}
 		
 		p.company-name{
@@ -119,6 +156,10 @@ hr{
 			a{
 				//color: $white;
 			}
+		}
+		.bw{
+			position: relative;
+			display: block;
 		}
 	}
 }
@@ -141,6 +182,10 @@ hr{
 	
 	.thumbs{
 		margin-top: 10px;
+
+		&:hover{
+			cursor: pointer;
+		}
 		
 		img{
 			background: rgba(240, 126, 0, 0.2);
@@ -153,6 +198,9 @@ hr{
 }
 .big-image{
 	margin-bottom: 20px;
+}
+img.thumb-active{
+	border: 1px solid $white !important;
 }
 
 /* -----------------------------------------
@@ -189,6 +237,43 @@ ul.errorlist{
 	}
 }
 
+
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+	#logo{
+		opacity: 0.6;
+	}
+	#nav a{
+		opacity: 0.7;
+	}
+	#portfolio-list{
+		.height{
+			height: 190px;
+		}
+		
+		.portfolio-preview{
+			height: 152px;
+			overflow: hidden;
+		}
+	}
+
+	.bw{
+		-webkit-transition: all 1s ease;
+           -moz-transition: all 1s ease;
+             -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+                transition: all 1s ease;
+		
+		-webkit-filter: grayscale(100%);
+		
+		&:hover{
+			-webkit-filter: grayscale(0%);
+		}
+	}
+}
 @media only screen and (max-width: 1023px) {
 	
 	.thumbs{
@@ -257,7 +342,13 @@ ul.errorlist{
 	
 }
 @media only screen and (max-width: 320px) {
-	
+	#nav{
+		a{
+			&:hover{
+				color: $white !important;
+			}
+		}
+	}
 	
 	.frase{
 		

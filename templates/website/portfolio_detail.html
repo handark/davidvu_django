@@ -29,12 +29,15 @@
 	<br />
 	<div class="row description">
 		<div class="eight columns big-image">
-			<img src="{{ MEDIA_PREFIX }}{{ company.image_set.all.0.image }}" />
+			<div class="image-wrapper">
+				<img src="{{ STATIC_PREFIX }}images/blank.gif" alt="image reset"/>
+			</div>
+			<!-- <img src="{{ MEDIA_PREFIX }}{{ company.image_set.all.0.image }}" />  -->
 			<div class="thumbs hide-for-small">
 				{% for image in company.image_set.all %}
-					<a href="{{ MEDIA_PREFIX }}{{ image.image }}" alt="{{ image.name }}" title="{% trans 'Ver imagen' %}">
-						<img src="{{ image.thumb.url }}" alt="{{ image.name }}" />
-					</a>
+					<!-- <a href="{{ MEDIA_PREFIX }}{{ image.image }}" alt="{{ image.name }}" title="{% trans 'Ver imagen' %}">  -->
+						<img src="{{ image.thumb.url }}" alt="{{ image.name }}" rel="{{ MEDIA_PREFIX }}{{ image.image }}" />
+					<!-- </a>  -->
 				{% endfor %}
 			</div>
 		</div>

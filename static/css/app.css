@@ -4199,77 +4199,95 @@ p.vevent abbr {
 :: Inicio
 :: Portafolio
 :: Errores
+:: Media Queries
 
 */
 /* -----------------------------------------
    Estilos compartidos
 ----------------------------------------- */
-/* line 15, ../sass/_style.scss */
+/* line 16, ../sass/_style.scss */
 body {
   background: url(../images/bg.gif);
   font-family: 'Maven Pro', sans-serif;
 }
 
-/* line 19, ../sass/_style.scss */
+/* line 20, ../sass/_style.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Amaranth',sans-serif;
 }
 
-/* line 22, ../sass/_style.scss */
+/* line 23, ../sass/_style.scss */
 p {
   font-family: 'Maven Pro', sans-serif;
 }
 
-/* line 25, ../sass/_style.scss */
+/* line 26, ../sass/_style.scss */
 hr {
   border-color: rgba(240, 126, 0, 0.4);
   margin: 10px 3px;
 }
 
-/* line 30, ../sass/_style.scss */
+/* line 31, ../sass/_style.scss */
 #nav {
   float: right;
 }
+/* line 34, ../sass/_style.scss */
+#nav a {
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+  text-shadow: 0px 0px 0px #ff7301;
+}
+/* line 43, ../sass/_style.scss */
+#nav a.active {
+  text-shadow: 0px 0px 2px #ff7301;
+}
+/* line 47, ../sass/_style.scss */
+#nav a:hover {
+  color: #000 !important;
+}
 
-/* line 33, ../sass/_style.scss */
+/* line 53, ../sass/_style.scss */
 #footer-container {
   background: url(../images/bg_footer.png);
   margin-top: 40px;
 }
-/* line 38, ../sass/_style.scss */
+/* line 58, ../sass/_style.scss */
 #footer-container p,
 #footer-container h4 {
   color: #fff;
 }
-/* line 42, ../sass/_style.scss */
+/* line 62, ../sass/_style.scss */
 #footer-container a {
   color: #919191;
 }
-/* line 45, ../sass/_style.scss */
+/* line 65, ../sass/_style.scss */
 #footer-container a:hover {
   color: #fff;
 }
-/* line 50, ../sass/_style.scss */
+/* line 70, ../sass/_style.scss */
 #footer-container span {
   color: #ff7301;
 }
-/* line 54, ../sass/_style.scss */
+/* line 74, ../sass/_style.scss */
 #footer-container footer {
   border-top: 1px solid #919191;
   padding-top: 20px;
 }
 
-/* line 60, ../sass/_style.scss */
+/* line 80, ../sass/_style.scss */
 #nav-footer {
   float: right;
 }
 
-/* line 65, ../sass/_style.scss */
+/* line 85, ../sass/_style.scss */
 .social ul.link-list {
   margin: 27px 0;
   height: 40px;
 }
-/* line 69, ../sass/_style.scss */
+/* line 89, ../sass/_style.scss */
 .social ul.link-list li {
   float: right;
   line-height: 38px;
@@ -4279,18 +4297,18 @@ hr {
 /* -----------------------------------------
    Inicio
 ----------------------------------------- */
-/* line 81, ../sass/_style.scss */
+/* line 101, ../sass/_style.scss */
 .frase {
   border-bottom: 1px solid #ff7301;
   border-top: 1px solid #ff7301;
   margin-bottom: 30px;
 }
-/* line 86, ../sass/_style.scss */
+/* line 106, ../sass/_style.scss */
 .frase h1 {
   font-size: 2.5em;
   text-align: center;
 }
-/* line 90, ../sass/_style.scss */
+/* line 110, ../sass/_style.scss */
 .frase h1 span {
   color: #ff7301;
 }
@@ -4298,44 +4316,65 @@ hr {
 /* -----------------------------------------
    Portafolio
 ----------------------------------------- */
-/* line 102, ../sass/_style.scss */
+/* line 122, ../sass/_style.scss */
 #portfolio-list .portfolio-preview {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
   margin-bottom: 10px;
   padding: 5px;
   text-align: center;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
-/* line 109, ../sass/_style.scss */
+/* line 138, ../sass/_style.scss */
 #portfolio-list .portfolio-preview:hover {
   border: 1px solid white;
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 20px #ff7301;
+  -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 20px #ff7301;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 20px #ff7301;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
 }
-/* line 113, ../sass/_style.scss */
+/* line 150, ../sass/_style.scss */
 #portfolio-list .portfolio-preview p.company-name {
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 0px 0 white;
 }
+/* line 160, ../sass/_style.scss */
+#portfolio-list .portfolio-preview .bw {
+  position: relative;
+  display: block;
+}
 
-/* line 127, ../sass/_style.scss */
+/* line 168, ../sass/_style.scss */
 .portfolio-header h3 {
   margin: 0;
 }
-/* line 131, ../sass/_style.scss */
+/* line 172, ../sass/_style.scss */
 .portfolio-header .url {
   margin-top: 7px;
 }
 
-/* line 137, ../sass/_style.scss */
+/* line 178, ../sass/_style.scss */
 .description h4 {
   margin: 0;
 }
-/* line 142, ../sass/_style.scss */
+/* line 183, ../sass/_style.scss */
 .description .thumbs {
   margin-top: 10px;
 }
-/* line 145, ../sass/_style.scss */
+/* line 186, ../sass/_style.scss */
+.description .thumbs:hover {
+  cursor: pointer;
+}
+/* line 190, ../sass/_style.scss */
 .description .thumbs img {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
@@ -4344,15 +4383,20 @@ hr {
   width: 208px;
 }
 
-/* line 154, ../sass/_style.scss */
+/* line 199, ../sass/_style.scss */
 .big-image {
   margin-bottom: 20px;
+}
+
+/* line 202, ../sass/_style.scss */
+img.thumb-active {
+  border: 1px solid white !important;
 }
 
 /* -----------------------------------------
    Errores
 ----------------------------------------- */
-/* line 161, ../sass/_style.scss */
+/* line 209, ../sass/_style.scss */
 .error {
   background: #ffcc00;
   background-repeat: repeat-x;
@@ -4376,84 +4420,127 @@ hr {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* line 183, ../sass/_style.scss */
+/* line 231, ../sass/_style.scss */
 ul.errorlist {
   list-style: none;
 }
-/* line 186, ../sass/_style.scss */
+/* line 234, ../sass/_style.scss */
 ul.errorlist li {
   clear: both;
   color: #c43c35;
 }
 
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+@media only screen and (min-width: 1024px) {
+  /* line 246, ../sass/_style.scss */
+  #logo {
+    opacity: 0.6;
+  }
+
+  /* line 249, ../sass/_style.scss */
+  #nav a {
+    opacity: 0.7;
+  }
+
+  /* line 253, ../sass/_style.scss */
+  #portfolio-list .height {
+    height: 190px;
+  }
+  /* line 257, ../sass/_style.scss */
+  #portfolio-list .portfolio-preview {
+    height: 152px;
+    overflow: hidden;
+  }
+
+  /* line 263, ../sass/_style.scss */
+  .bw {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: grayscale(100%);
+  }
+  /* line 272, ../sass/_style.scss */
+  .bw:hover {
+    -webkit-filter: grayscale(0%);
+  }
+}
 @media only screen and (max-width: 1023px) {
-  /* line 195, ../sass/_style.scss */
+  /* line 280, ../sass/_style.scss */
   .thumbs img {
     width: 238px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 204, ../sass/_style.scss */
+  /* line 289, ../sass/_style.scss */
   footer {
     text-align: center;
   }
 
-  /* line 207, ../sass/_style.scss */
+  /* line 292, ../sass/_style.scss */
   #logo {
     text-align: center;
   }
 
-  /* line 210, ../sass/_style.scss */
+  /* line 295, ../sass/_style.scss */
   #nav {
     float: none;
     text-align: center;
   }
 
-  /* line 214, ../sass/_style.scss */
+  /* line 299, ../sass/_style.scss */
   #nav-footer {
     float: none;
   }
-  /* line 217, ../sass/_style.scss */
+  /* line 302, ../sass/_style.scss */
   #nav-footer li {
     float: none;
     display: inline-block;
   }
 
-  /* line 222, ../sass/_style.scss */
+  /* line 307, ../sass/_style.scss */
   .social {
     position: absolute;
     top: 5px;
     right: 10px;
   }
 
-  /* line 228, ../sass/_style.scss */
+  /* line 313, ../sass/_style.scss */
   .url {
     text-align: left;
   }
 
-  /* line 234, ../sass/_style.scss */
+  /* line 319, ../sass/_style.scss */
   #portfolio-list .portfolio-preview {
     background: none;
     border: none;
   }
-  /* line 238, ../sass/_style.scss */
+  /* line 323, ../sass/_style.scss */
   #portfolio-list .portfolio-preview:hover {
     border: none;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 249, ../sass/_style.scss */
+  /* line 334, ../sass/_style.scss */
   .frase h1 {
     font-size: 1.8em;
   }
 
-  /* line 254, ../sass/_style.scss */
+  /* line 339, ../sass/_style.scss */
   .social {
     display: none;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 264, ../sass/_style.scss */
+  /* line 347, ../sass/_style.scss */
+  #nav a:hover {
+    color: white !important;
+  }
+
+  /* line 355, ../sass/_style.scss */
   .frase h1 {
     font-size: 1.4em;
   }
@@ -4569,7 +4656,7 @@ ul.errorlist li {
   }
   /* line 62, ../sass/foundation/components/modules/_navbar.scss */
   .nav-bar > li:hover a {
-    color: white;
+    color: white !important;
   }
 }
 /* CSS for jQuery Orbit Plugin 1.4.0
