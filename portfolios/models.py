@@ -19,7 +19,7 @@ class Company(models.Model):
     design = models.CharField(max_length=50)
     #description = models.TextField()
     description = tinymce_models.HTMLField()
-    #description_en = tinymce_models.HTMLField()
+    description_en = tinymce_models.HTMLField()
     url = models.URLField()
     pub_date = models.DateTimeField('Date published');
     category = models.ForeignKey(Category)

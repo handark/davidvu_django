@@ -1,5 +1,6 @@
 {% extends "website/base.html" %}
-{% load i18n %}	
+{% load i18n %}
+	
 
 {% block title %}
 {% trans "Portafolio" %} :: {{ company.company_name }}
@@ -9,7 +10,9 @@
 {% trans "Muestra del desarrollo" %} {{ company.company_name }} 
 {% endblock %}
 
+
 {% block content %}
+
 
 	<div class="row portfolio-header">
 		<div class="seven columns">
@@ -27,14 +30,18 @@
 			<div class="thumbs hide-for-small">
 				{% for image in company.image_set.all %}
 					<a href="{{ MEDIA_PREFIX }}{{ image.image }}" alt="{{ image.name }}" title="{% trans 'Ver imagen' %}">
-						<img src="{{ image.thumb.url }}" alt="{{ image.name }}"/>
+						<img src="{{ image.thumb.url }}" alt="{{ image.name }}" />
 					</a>
 				{% endfor %}
 			</div>
 		</div>
 		<div class="four columns">
 			<h4>{% trans "Mi trabajo" %}</h4>
-			{{ company.description|safe }}
+			{% if LANGUAGE_CODE == "en" %}
+				{{ company.description_en|safe }}
+			{% else %}
+				{{ company.description|safe }}
+			{% endif %}
 			<h4>{% trans "Año" %}</h4>
 			{{ company.year }}
 			<br /><br />
