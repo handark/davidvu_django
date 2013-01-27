@@ -29,7 +29,7 @@
 	{% if form %}
 		{% if error_message %}<div class="error"><strong>{{ error_message }}</strong></div>{% endif %}
 		<div id="contact-form">
-			<form action="/contact/" method="post">{% csrf_token %}
+			<form action="{% url page-detail 'contacto' %}" method="post">{% csrf_token %}
 				{{ form.as_p }}
 				<input type="submit" value="Submit" />
 			</form>
