@@ -4193,7 +4193,7 @@ p.vevent abbr {
 }
 
 /* -------------------------------------------------- 
-   Table of Contents
+   Tabla de contenido
 -----------------------------------------------------
 :: Estilos compartidos
 :: Inicio
@@ -4227,39 +4227,49 @@ hr {
 }
 
 /* line 30, ../sass/_style.scss */
+#nav {
+  float: right;
+}
+
+/* line 33, ../sass/_style.scss */
 #footer-container {
   background: url(../images/bg_footer.png);
   margin-top: 40px;
 }
-/* line 35, ../sass/_style.scss */
+/* line 38, ../sass/_style.scss */
 #footer-container p,
 #footer-container h4 {
   color: #fff;
 }
-/* line 39, ../sass/_style.scss */
+/* line 42, ../sass/_style.scss */
 #footer-container a {
   color: #919191;
 }
-/* line 42, ../sass/_style.scss */
+/* line 45, ../sass/_style.scss */
 #footer-container a:hover {
   color: #fff;
 }
-/* line 47, ../sass/_style.scss */
+/* line 50, ../sass/_style.scss */
 #footer-container span {
   color: #ff7301;
 }
-/* line 51, ../sass/_style.scss */
+/* line 54, ../sass/_style.scss */
 #footer-container footer {
   border-top: 1px solid #919191;
   padding-top: 20px;
 }
 
-/* line 59, ../sass/_style.scss */
+/* line 60, ../sass/_style.scss */
+#nav-footer {
+  float: right;
+}
+
+/* line 65, ../sass/_style.scss */
 .social ul.link-list {
   margin: 27px 0;
   height: 40px;
 }
-/* line 63, ../sass/_style.scss */
+/* line 69, ../sass/_style.scss */
 .social ul.link-list li {
   float: right;
   line-height: 38px;
@@ -4269,18 +4279,18 @@ hr {
 /* -----------------------------------------
    Inicio
 ----------------------------------------- */
-/* line 75, ../sass/_style.scss */
+/* line 81, ../sass/_style.scss */
 .frase {
   border-bottom: 1px solid #ff7301;
   border-top: 1px solid #ff7301;
   margin-bottom: 30px;
 }
-/* line 80, ../sass/_style.scss */
+/* line 86, ../sass/_style.scss */
 .frase h1 {
   font-size: 2.5em;
   text-align: center;
 }
-/* line 84, ../sass/_style.scss */
+/* line 90, ../sass/_style.scss */
 .frase h1 span {
   color: #ff7301;
 }
@@ -4288,17 +4298,19 @@ hr {
 /* -----------------------------------------
    Portafolio
 ----------------------------------------- */
-/* line 96, ../sass/_style.scss */
+/* line 102, ../sass/_style.scss */
 #portfolio-list .portfolio-preview {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
+  margin-bottom: 10px;
   padding: 5px;
+  text-align: center;
 }
-/* line 101, ../sass/_style.scss */
+/* line 109, ../sass/_style.scss */
 #portfolio-list .portfolio-preview:hover {
   border: 1px solid white;
 }
-/* line 105, ../sass/_style.scss */
+/* line 113, ../sass/_style.scss */
 #portfolio-list .portfolio-preview p.company-name {
   margin-bottom: 0;
   text-align: center;
@@ -4306,34 +4318,39 @@ hr {
   text-shadow: 1px 0px 0 white;
 }
 
-/* line 119, ../sass/_style.scss */
+/* line 127, ../sass/_style.scss */
 .portfolio-header h3 {
   margin: 0;
 }
-/* line 123, ../sass/_style.scss */
+/* line 131, ../sass/_style.scss */
 .portfolio-header .url {
   margin-top: 7px;
 }
 
-/* line 129, ../sass/_style.scss */
+/* line 137, ../sass/_style.scss */
 .description h4 {
   margin: 0;
 }
-/* line 133, ../sass/_style.scss */
+/* line 142, ../sass/_style.scss */
 .description .thumbs {
   margin-top: 10px;
 }
-/* line 136, ../sass/_style.scss */
+/* line 145, ../sass/_style.scss */
 .description .thumbs img {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
   padding: 5px;
 }
 
+/* line 152, ../sass/_style.scss */
+.big-image {
+  margin-bottom: 20px;
+}
+
 /* -----------------------------------------
    Errores
 ----------------------------------------- */
-/* line 148, ../sass/_style.scss */
+/* line 159, ../sass/_style.scss */
 .error {
   background: #ffcc00;
   background-repeat: repeat-x;
@@ -4357,16 +4374,82 @@ hr {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* line 170, ../sass/_style.scss */
+/* line 181, ../sass/_style.scss */
 ul.errorlist {
   list-style: none;
 }
-/* line 173, ../sass/_style.scss */
+/* line 184, ../sass/_style.scss */
 ul.errorlist li {
   clear: both;
   color: #c43c35;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 194, ../sass/_style.scss */
+  footer {
+    text-align: center;
+  }
+
+  /* line 197, ../sass/_style.scss */
+  #logo {
+    text-align: center;
+  }
+
+  /* line 200, ../sass/_style.scss */
+  #nav {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 204, ../sass/_style.scss */
+  #nav-footer {
+    float: none;
+  }
+  /* line 207, ../sass/_style.scss */
+  #nav-footer li {
+    float: none;
+    display: inline-block;
+  }
+
+  /* line 212, ../sass/_style.scss */
+  .social {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  /* line 218, ../sass/_style.scss */
+  .url {
+    text-align: left;
+  }
+
+  /* line 224, ../sass/_style.scss */
+  #portfolio-list .portfolio-preview {
+    background: none;
+    border: none;
+  }
+  /* line 228, ../sass/_style.scss */
+  #portfolio-list .portfolio-preview:hover {
+    border: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 239, ../sass/_style.scss */
+  .frase h1 {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 247, ../sass/_style.scss */
+  .social {
+    display: none;
+  }
+
+  /* line 253, ../sass/_style.scss */
+  .frase h1 {
+    font-size: 1.4em;
+  }
+}
 /* Requires
    globals.css */
 /* line 4, ../sass/foundation/components/modules/_navbar.scss */
@@ -4426,46 +4509,7 @@ ul.errorlist li {
 .nav-bar > li ul {
   margin-bottom: 0;
 }
-/* line 26, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li .flyout {
-  display: none;
-}
-/* line 29, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li.has-flyout > a:first-child {
-  padding-right: 36px;
-  position: relative;
-}
 /* line 30, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li.has-flyout > a:first-child:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 4px;
-  border-color: #e6e6e6 transparent transparent transparent;
-  position: absolute;
-  right: 20px;
-  top: 17px;
-}
-/* line 32, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li.has-flyout > a.flyout-toggle {
-  border-left: 0 !important;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 22px;
-  z-index: 2;
-  display: block;
-}
-/* line 34, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li.has-flyout.is-touch > a:first-child {
-  padding-right: 55px;
-}
-/* line 35, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar > li.has-flyout.is-touch > a.flyout-toggle {
-  border-left: 1px dashed #666;
-}
-/* line 40, ../sass/foundation/components/modules/_navbar.scss */
 .nav-bar > li > a:first-child {
   position: relative;
   padding: 0 20px;
@@ -4473,229 +4517,51 @@ ul.errorlist li {
   text-decoration: none;
   font-size: 14px;
 }
-/* line 41, ../sass/foundation/components/modules/_navbar.scss */
+/* line 31, ../sass/foundation/components/modules/_navbar.scss */
 .nav-bar > li > input {
   margin: 0 10px;
 }
-/* line 43, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical {
-  height: auto;
-  margin-top: 0;
-}
-/* line 45, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical > li {
-  float: none;
-  border-bottom: none;
-}
-/* line 47, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical > li.has-flyout > a:first-child:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 4px;
-  border-color: transparent transparent transparent #e6e6e6;
-}
-/* line 48, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical > li .flyout {
-  left: 100%;
-  top: -1px;
-}
-/* line 49, ../sass/foundation/components/modules/_navbar.scss */
-.nav-bar.vertical > li .flyout.right {
-  left: auto;
-  right: 100%;
-}
-
-/* line 56, ../sass/foundation/components/modules/_navbar.scss */
-.flyout {
-  background: #f2f2f2;
-  padding: 20px;
-  margin: 0;
-  border: 1px solid #d9d9d9;
-  position: absolute;
-  top: 39px;
-  left: -1px;
-  width: 250px;
-  z-index: 40;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  /* remove margin on any first-child element */
-  /* remove margin on last element */
-}
-/* line 58, ../sass/foundation/components/modules/_navbar.scss */
-.flyout p {
-  line-height: 1.2;
-  font-size: 13px;
-}
-/* line 59, ../sass/foundation/components/modules/_navbar.scss */
-.flyout *:first-child {
-  margin-top: 0;
-}
-/* line 60, ../sass/foundation/components/modules/_navbar.scss */
-.flyout *:last-child {
-  margin-bottom: 0;
-}
-/* line 62, ../sass/foundation/components/modules/_navbar.scss */
-.flyout.small {
-  width: 166.66667px;
-}
-/* line 63, ../sass/foundation/components/modules/_navbar.scss */
-.flyout.large {
-  width: 437.5px;
-}
-/* line 65, ../sass/foundation/components/modules/_navbar.scss */
-.flyout.right {
-  left: auto;
-  right: -2px;
-}
-/* line 66, ../sass/foundation/components/modules/_navbar.scss */
-.flyout.up {
-  top: auto;
-  bottom: 39px;
-}
-
-/* line 70, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout, .nav-bar li ul {
-  padding: 0;
-  list-style: none;
-}
-/* line 72, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout li, .nav-bar li ul li {
-  border-left: solid 3px #CCC;
-}
-/* line 73, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout li a, .nav-bar li ul li a {
-  background: #f2f2f2;
-  border: 1px solid #e6e6e6;
-  border-width: 1px 1px 0 0;
-  color: #555;
-  display: block;
-  font-size: 14px;
-  height: auto;
-  line-height: 1;
-  padding: 15px 20px;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-}
-/* line 74, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout li a:hover, .nav-bar li ul li a:hover {
-  background: #ebebeb;
-  color: #333;
-}
-/* line 76, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout li.active, .nav-bar li ul li.active {
-  margin-top: 0;
-  border-top: 1px solid #4d4d4d;
-  border-left: 4px solid #1a1a1a;
-}
-/* line 77, ../sass/foundation/components/modules/_navbar.scss */
-ul.flyout li.active a, .nav-bar li ul li.active a {
-  background: #4d4d4d;
-  border: none;
-  color: #fff;
-  height: auto;
-  margin: 0;
-  position: static;
-  top: 0;
-  -webkit-box-shadow: 0 0 0;
-  -moz-box-shadow: 0 0 0;
-  box-shadow: 0 0 0;
-}
 
 /* Mobile Styles */
-@media only screen and (max-device-width: 1280px) {
-  /* line 86, ../sass/foundation/components/modules/_navbar.scss */
-  .touch .nav-bar li.has-flyout > a {
-    padding-right: 36px !important;
-  }
-}
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
-  /* line 90, ../sass/foundation/components/modules/_navbar.scss */
+  /* line 44, ../sass/foundation/components/modules/_navbar.scss */
   .touch .nav-bar li a {
     font-size: 13px;
     font-size: 1.3rem;
   }
-
-  /* line 91, ../sass/foundation/components/modules/_navbar.scss */
-  .touch .nav-bar li.has-flyout > a.flyout-toggle {
-    padding: 20px !important;
-  }
-
-  /* line 92, ../sass/foundation/components/modules/_navbar.scss */
-  .touch .nav-bar li.has-flyout > a {
-    padding-right: 36px !important;
-  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 96, ../sass/foundation/components/modules/_navbar.scss */
+  /* line 48, ../sass/foundation/components/modules/_navbar.scss */
   .nav-bar {
     height: auto;
+    text-align: center;
   }
-  /* line 98, ../sass/foundation/components/modules/_navbar.scss */
+  /* line 51, ../sass/foundation/components/modules/_navbar.scss */
   .nav-bar > li {
     float: none;
-    display: block;
+    display: inline-block;
     border-right: none;
   }
-  /* line 99, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar > li > a.main {
+}
+@media only screen and (max-width: 320px) {
+  /* line 56, ../sass/foundation/components/modules/_navbar.scss */
+  .nav-bar {
     text-align: left;
-    border-top: 1px solid #ddd;
-    border-right: none;
   }
-  /* line 100, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar > li:first-child > a.main {
-    border-top: none;
-  }
-  /* line 101, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar > li.has-flyout > a.flyout-toggle {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 22px;
-    z-index: 2;
-    display: block;
-  }
-  /* line 102, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar > li.has-flyout.is-touch > a.flyout-toggle span {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-  }
-  /* line 103, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar > li.has-flyout > a.flyout-toggle:hover span {
-    border-top-color: #141414;
-  }
-  /* line 104, ../sass/foundation/components/modules/_navbar.scss */
-  .nav-bar.vertical > li.has-flyout > .flyout {
-    left: 0;
-  }
-
-  /* line 107, ../sass/foundation/components/modules/_navbar.scss */
-  .flyout {
-    position: relative;
-    width: 100% !important;
-    top: auto;
-    margin-right: -2px;
-    border-width: 1px 1px 0 1px;
-  }
-  /* line 109, ../sass/foundation/components/modules/_navbar.scss */
-  .flyout.right {
+  /* line 59, ../sass/foundation/components/modules/_navbar.scss */
+  .nav-bar > li {
+    background: white;
     float: none;
-    right: auto;
-    left: -1px;
+    display: block;
+    margin-bottom: .2em;
   }
-  /* line 110, ../sass/foundation/components/modules/_navbar.scss */
-  .flyout.small, .flyout.large {
-    width: 100% !important;
+  /* line 60, ../sass/foundation/components/modules/_navbar.scss */
+  .nav-bar > li:hover {
+    background: #ff7301;
   }
-  /* line 111, ../sass/foundation/components/modules/_navbar.scss */
-  .flyout p:last-child {
-    margin-bottom: 18px;
+  /* line 62, ../sass/foundation/components/modules/_navbar.scss */
+  .nav-bar > li:hover a {
+    color: white;
   }
 }
 /* CSS for jQuery Orbit Plugin 1.4.0

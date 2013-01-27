@@ -3,7 +3,7 @@
 	<!-- Header and Nav -->
   	
 	  <div class="row">
-	  	<header>
+	  	<header id="logo">
 		    <div class="three columns">
 		      <h1><a href="{% url home %}" alt="{% trans 'Ir al inicio' %}" title="{% trans 'Ir al inicio' %}">
 				{% if LANGUAGE_CODE == 'en' %}
@@ -17,11 +17,11 @@
 	    
 	    <nav> 
 		    <div class="eight columns">
-		      <ul class="nav-bar right">
+		      <ul id="nav" class="nav-bar">
 		        <li><a href="{% url portfolio-index %}">{% trans "Portafolio" %}</a></li>
 		        <li><a href="{% url page-detail 'acerca-de' %}">{% trans "Acerca de" %}</a></li>
 		        <!-- <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>  -->
-		        <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
+		        <li class="hide-for-small"><a href="https://github.com/sliker" target="_blank">Github</a></li>
 		        <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
 		      </ul>
 		    </div>
@@ -36,7 +36,7 @@
 		    </div>
 	    </aside>
 	    
-	    <div class="twelve columns">
+	    <div class="twelve columns hide-for-small">
 	    	<hr />
 	    </div>
 	  </div>

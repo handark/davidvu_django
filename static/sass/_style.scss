@@ -1,5 +1,5 @@
 /* -------------------------------------------------- 
-   Table of Contents
+   Tabla de contenido
 -----------------------------------------------------
 :: Estilos compartidos
 :: Inicio
@@ -27,6 +27,9 @@ hr{
 	margin: 10px 3px;
 }
 
+#nav{
+	float: right;
+}
 #footer-container{
 	background: url(../images/bg_footer.png);
 	margin-top: 40px;
@@ -53,6 +56,9 @@ hr{
 		padding-top: 20px;
 	}
 	
+}
+#nav-footer{
+	float: right;
 }
 .social{
 	
@@ -96,7 +102,9 @@ hr{
 	.portfolio-preview{
 		background: rgba(240, 126, 0, 0.2);
 		border:1px solid $naranja;
+		margin-bottom: 10px;
 		padding: 5px;
+		text-align: center;
 		
 		&:hover{
 			border:1px solid $white;
@@ -130,6 +138,7 @@ hr{
 		margin: 0;
 	}
 	
+	
 	.thumbs{
 		margin-top: 10px;
 		
@@ -140,7 +149,9 @@ hr{
 		}		
 	}
 }
-
+.big-image{
+	margin-bottom: 20px;
+}
 
 /* -----------------------------------------
    Errores
@@ -175,3 +186,73 @@ ul.errorlist{
 		color: #c43c35;
 	}
 }
+
+
+
+
+@media only screen and (max-width: 767px) {
+	footer{
+		text-align: center;
+	}
+	#logo{
+		text-align: center;
+	}
+	#nav{
+		float: none;
+		text-align: center;
+	}
+	#nav-footer{
+		float: none;
+		
+		li{
+			float: none; display: inline-block;
+		}
+	}
+	
+	.social{
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+
+	.url{
+		text-align: left;
+	}
+
+	#portfolio-list{
+	
+		.portfolio-preview{
+			background: none;
+			border: none;
+
+			&:hover{
+				border: none;
+			}
+		}
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	
+	.frase{
+		
+		h1{
+			font-size: 1.8em;
+		}
+	}
+	
+	
+}
+@media only screen and (max-width: 320px) {
+	.social{
+		display: none;
+	}
+	
+	.frase{
+		
+		h1{
+			font-size: 1.4em;
+		}
+	}
+}
+
