@@ -194,7 +194,7 @@ msgid ""
 "Un correo electrónico es la forma más fácil y rápida de contactarme, "
 "escríbeme y así podremos trabajar juntos. Un saludo!"
 msgstr ""
-"An email it's the easy way to contact me, writeme and we will work together. "
+"An email it's the easy way to contact me, write me and we will work together. "
 "Cheers!"
 
 #: templates/website/base_home.html:124
