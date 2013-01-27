@@ -43,29 +43,37 @@
 	  
 	  <!-- First Band (Slider) -->
 	  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
-	    
-	  <div class="row">
-	    <div class="twelve columns">
-	      <div id="slider">
-	        <img src="{{ STATIC_PREFIX }}images/hana_wordpress_slide.jpg" alt="Sitio web Hana Salud y Bienestar en Wordpress" />
-	        <img src="http://placehold.it/1000x400&text=[img 2]" />
-	        <img src="http://placehold.it/1000x400&text=[img 3]" />
-	        <img src="http://placehold.it/1000x400&text=[img 4]" />
-	      </div>
-	      
-	    </div>
-	  </div>
+	  <section>
+	  	<article>  
+	  		<div class="row">
+	    		<div class="twelve columns">
+		      		<div id="slider">
+		        		<img src="{{ STATIC_PREFIX }}images/hana_wordpress_slide.jpg" alt="Sitio web Hana Salud y Bienestar en Wordpress" />
+	    	    		<img src="http://placehold.it/1000x400&text=[img 2]" />
+	        			<img src="http://placehold.it/1000x400&text=[img 3]" />
+			       		<img src="http://placehold.it/1000x400&text=[img 4]" />
+	      			</div>
+	    		</div>
+	  		</div>
+	  	</article>
+	  </section>
 	  
-	  <div class="row frase">
-	  	<div class="twelve columns">
-	  		<h1>{% trans "Me especializo  en el modelado" %} <span>3D</span> {% trans "y en el desarrollo profesional de sitios web con" %} <span>HTML5</span>, <span>CSS3</span>, <span>dJango</span>, <span>Wordpress</span>, <span>CakePHP</span>, <span>Responsive</span>.</h1>
-	  	</div>
-	  </div>
+	  <section>
+	  	<article>
+	  		<div class="row frase">
+		  		<div class="twelve columns">
+		  			<h1>{% trans "Me especializo  en el modelado" %} <span>3D</span> {% trans "y en el desarrollo profesional de sitios web con" %} <span>HTML5</span>, <span>CSS3</span>, <span>dJango</span>, <span>Wordpress</span>, <span>CakePHP</span>, <span>Responsive</span>.</h1>
+	  			</div>
+	  		</div>
+	  	</article>
+	  </section>
 	  
 	  <!-- Three-up Content Blocks -->
 	  
+	  <section>
 	  <div class="row">
-	  
+	  	
+	  	<article>
 	    <div class="four columns">
 	      <h4>{% trans "Lo que hago" %}</h4>
 	      <p>
@@ -75,7 +83,9 @@
 	      </p>
 	      
 	    </div>
+	    </article>
 	    
+	    <article>
 	    <div class="four columns">
 	      <h4>{% trans "Clientes" %}</h4>
 	      <p>
@@ -83,20 +93,26 @@
 	      	{% trans "y necesitan programar un sitio web completamente funcional" %}.
 	      </p>
 	    </div>
+	    </article>
 	    
+	    <article>
 	    <div class="four columns">
 	    	<h4>Tweets @zeroblend</h4>
 	    	{% block twitter %}
 		    {% endblock %}
 	    </div>
+	    </article>
 	    
 	  </div>
+	  </section>
 	  
 	  
 	  <!-- Call to Action Panel -->
+	  <section>
 	  <div class="row">
 	    <div class="twelve columns">
-	    
+	      
+	      <article>
 	      <div class="panel">
 	        <h4>{% trans "Contáctame" %}</h4>
 	            
@@ -109,9 +125,11 @@
 	          </div>
 	        </div>
 	      </div>
+	      </article>
 	      
 	    </div>
 	  </div>
+	  </section>
 	  
 	  {% include "website/footer.html" %}
 

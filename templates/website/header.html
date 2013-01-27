@@ -1,35 +1,44 @@
 {% load i18n %}
 {% get_current_language as LANGUAGE_CODE %}	
 	<!-- Header and Nav -->
-  
+  	
 	  <div class="row">
-	    <div class="three columns">
-	      <h1><a href="{% url home %}" alt="{% trans 'Ir al inicio' %}" title="{% trans 'Ir al inicio' %}">
-			{% if LANGUAGE_CODE == 'en' %}
-				<img src="{{ STATIC_PREFIX }}images/davidvu_webdeveloper_digitalartist_logo.png" alt="Logo" />
-			{% else %}
-				<img src="{{ STATIC_PREFIX }}images/davidvu_desarrolloweb_artistadigital_logo.png" alt="Logo" />
-			{% endif %}
-		  </a></h1>
-	    </div>
-	    <div class="eight columns">
-	      <ul class="nav-bar right">
-	        <li><a href="{% url portfolio-index %}">{% trans "Portafolio" %}</a></li>
-	        <li><a href="{% url page-detail 'acerca-de' %}">{% trans "Acerca de" %}</a></li>
-	        <!-- <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>  -->
-	        <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
-	        <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
-	      </ul>
-	    </div>
-	    <div class="one columns social text-right">
-	    	<ul class="link-list">
-	      		<li><a href="https://twitter.com/zeroblend" target="_blank"><img src="{{ STATIC_PREFIX }}images/icon_twitter.png" alt="Icono de twitter" title="{% trans 'Sígueme en Twitter' %}" /></a>
-	      		<li><a href="http://www.youtube.com/user/zeroblend?feature=mhee" target="_blank" title="{% trans 'Suscríbete al canal de YouTube' %}"><img src="{{ STATIC_PREFIX }}images/icon_youtube.png" alt="Icono de youtube" /></a>
-	      	</ul>
-	    </div>
+	  	<header>
+		    <div class="three columns">
+		      <h1><a href="{% url home %}" alt="{% trans 'Ir al inicio' %}" title="{% trans 'Ir al inicio' %}">
+				{% if LANGUAGE_CODE == 'en' %}
+					<img src="{{ STATIC_PREFIX }}images/davidvu_webdeveloper_digitalartist_logo.png" alt="Logo" />
+				{% else %}
+					<img src="{{ STATIC_PREFIX }}images/davidvu_desarrolloweb_artistadigital_logo.png" alt="Logo" />
+				{% endif %}
+			  </a></h1>
+		    </div>
+	    </header>
+	    
+	    <nav> 
+		    <div class="eight columns">
+		      <ul class="nav-bar right">
+		        <li><a href="{% url portfolio-index %}">{% trans "Portafolio" %}</a></li>
+		        <li><a href="{% url page-detail 'acerca-de' %}">{% trans "Acerca de" %}</a></li>
+		        <!-- <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>  -->
+		        <li><a href="https://github.com/sliker" target="_blank">Github</a></li>
+		        <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
+		      </ul>
+		    </div>
+		 </nav>
+		 
+		 <aside>
+		    <div class="one columns social text-right">
+		    	<ul class="link-list">
+		      		<li><a href="https://twitter.com/zeroblend" target="_blank"><img src="{{ STATIC_PREFIX }}images/icon_twitter.png" alt="Icono de twitter" title="{% trans 'Sígueme en Twitter' %}" /></a>
+		      		<li><a href="http://www.youtube.com/user/zeroblend?feature=mhee" target="_blank" title="{% trans 'Suscríbete al canal de YouTube' %}"><img src="{{ STATIC_PREFIX }}images/icon_youtube.png" alt="Icono de youtube" /></a>
+		      	</ul>
+		    </div>
+	    </aside>
+	    
 	    <div class="twelve columns">
 	    	<hr />
 	    </div>
 	  </div>
-	  
+	 
 	<!-- End Header and Nav -->

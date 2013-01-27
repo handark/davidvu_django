@@ -39,15 +39,18 @@
 	  
 	  
 	  <!-- Content -->
-	  
-	  <div class="row">
-	  	<div class="twelve columns">
-	  		<div class="content">
-	  			{% block content %}
-		    	{% endblock %}
-	  		</div>
-	  	</div>
-	  </div>
+	  <section>
+		  <div class="row">
+		  	<div class="twelve columns">
+				<article>
+			  		<div class="content">
+			  			{% block content %}
+				    	{% endblock %}
+			  		</div>
+				</article>
+		  	</div>
+		  </div>
+	  </section>
 	  
 	{% include "website/footer.html" %}
 
