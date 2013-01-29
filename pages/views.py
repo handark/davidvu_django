@@ -17,9 +17,9 @@ def view(request, page_slug):
             form = ContactForm(request.POST) # A form bound to the POST data
             if form.is_valid(): # All validation rules pass
                 # Process the data in form.cleaned_data
-                subject = form.cleaned_data['subject']
-                message = form.cleaned_data['message']
-                sender = form.cleaned_data['sender']
+                subject = form.cleaned_data['asunto']
+                message = form.cleaned_data['mensaje']
+                sender = form.cleaned_data['correo']
                 
                 recipients = ['zeroblend@davidvu']
                 from django.core.mail import send_mail
