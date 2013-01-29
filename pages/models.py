@@ -15,6 +15,6 @@ class Page(models.Model):
     
 class ContactForm(forms.Form):
     asunto = forms.CharField(max_length=100, label=_('Asunto'))
-    mensaje = forms.CharField(label=_('Mensaje'))
+    mensaje = forms.CharField(label=_('Mensaje'), widget=forms.Textarea)
     correo = forms.EmailField(label=_('Correo'))
     #cc_myself = forms.BooleanField()
