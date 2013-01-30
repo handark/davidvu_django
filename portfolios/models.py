@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 from tinymce import models as tinymce_models
@@ -29,6 +30,10 @@ class Company(models.Model):
     
     def __unicode__(self):
         return self.company_name
+    
+    def get_absolute_url(self):
+        #import pdb; pdb.set_trace()
+        return reverse('portfolios.views.detail', args=[str(self.slug)])
 
 class Image(models.Model):
     company = models.ForeignKey(Company)
