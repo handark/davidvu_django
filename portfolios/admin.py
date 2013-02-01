@@ -10,7 +10,7 @@ class CompanyAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("company_name",)}
     
     fieldsets = [
-        ('Company Information',         {'fields': ['company_name', 'slug', 'description', 'description_en', 'url', 'year', 'design']}),
+        ('Company Information',         {'fields': ['company_name', 'slug', 'description', 'description_en', 'url', 'year', 'design', 'order']}),
         ('Category and date',         {'fields': ['category', 'pub_date']}),
     ]
     

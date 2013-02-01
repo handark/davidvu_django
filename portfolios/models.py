@@ -24,6 +24,7 @@ class Company(models.Model):
     url = models.URLField(blank=True)
     pub_date = models.DateTimeField('Date published');
     category = models.ForeignKey(Category)
+    order = models.IntegerField(blank=True)
     
     class Meta:
         verbose_name_plural = "companies"

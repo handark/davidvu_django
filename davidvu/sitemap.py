@@ -34,3 +34,6 @@ class PortfolioSitemap(Sitemap):
 
     def items(self):
         return Company.objects.all()
+    
+    def lastmod(self, obj):
+        print obj.pub_date
