@@ -19,7 +19,7 @@ $(window).load(function() {
 		}).toggleClass("active");
 	})
 	//portfolio images
-	console.log($('.portfolio-preview').width());
+	//console.log($('.portfolio-preview').width());
 	if ($('.portfolio-preview').width() == '208'){
 		$('.portfolio-preview').hover(function() {
 			$(this).animate({height: '172px'});

@@ -10,14 +10,14 @@
 {% endblock %}
 
 {% block content %}
-	<h3>
-		{% if LANGUAGE_CODE == 'en' %}
-			{{ page.title_en }}
-		{% else %}
-			{{ page.title }}
-		{% endif %}
-	</h3>
-	<div id="page-content">
+	<div id="page-content" {% if form %} class="six columns" {% endif %}>
+		<h3>
+			{% if LANGUAGE_CODE == 'en' %}
+				{{ page.title_en }}
+			{% else %}
+				{{ page.title }}
+			{% endif %}
+		</h3>
 		{% if LANGUAGE_CODE == 'en' %}
 			{{ page.body_en|safe }}
 		{% else %}
@@ -26,8 +26,9 @@
 		
 	</div>
 	{% if form %}
-		{% if error_message %}<div class="error"><strong>{{ error_message }}</strong></div>{% endif %}
-		<div id="contact-form">
+		
+		<div id="contact-form" class="six columns">
+			{% if error_message %}<div class="error"><strong>{{ error_message }}</strong></div>{% endif %}
 			<form action="{% url page-detail 'contacto' %}" method="post">{% csrf_token %}
 				{{ form.as_p }}
 				<input type="submit" value="Submit" />

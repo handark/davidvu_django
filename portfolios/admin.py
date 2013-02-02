@@ -16,8 +16,9 @@ class CompanyAdmin(admin.ModelAdmin):
     
     inlines = [ImageInline]
 
-    list_display = ('company_name', 'pub_date')
+    list_display = ('company_name', 'order', 'pub_date')
     list_filter = ['pub_date', 'design']
+    list_editable = ['order']
     search_fields = ['company_name', 'design']
     date_hierarchy = 'pub_date'
 

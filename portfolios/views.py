@@ -3,8 +3,8 @@ from portfolios.models import Company
 
 def index(request):
     #output = ', '.join([c.company_name for c in latest_companies])
-    all_companies = Company.objects.filter(category__name='Web').order_by('-pub_date')
-    all_models = Company.objects.filter(category__name='3D').order_by('-pub_date')
+    all_companies = Company.objects.filter(category__name='Web').order_by('-order', '-pub_date')
+    all_models = Company.objects.filter(category__name='3D').order_by('-order', '-pub_date')
     return render_to_response('website/portfolio.html', {'all_companies': all_companies, 'all_models': all_models})
     """
     t = loader.get_template('companies/index.html')

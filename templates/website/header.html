@@ -23,6 +23,11 @@
 		        <!-- <li><a href="/pagina/acerca-de">{% trans "Acerca de" %}</a></li>  -->
 		        <li class="hide-for-small"><a href="https://github.com/sliker" target="_blank">Github</a></li>
 		        <li><a href="{% url page-detail 'contacto' %}">{% trans "Contacto" %}</a></li>
+		        {% if LANGUAGE_CODE == 'en' %}
+		        	<li class="lang"><a href="/es/" title="Ver en Español">Es</a>
+		        {% else %}
+		        	<li class="lang"><a href="/en/" title="View in English">En</a>
+		        {% endif %}
 		      </ul>
 		    </div>
 		 </nav>

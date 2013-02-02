@@ -23,7 +23,7 @@
 					<div class="row">
 				{% endif %}
 				
-			    	<div class="three columns end height">
+			    	<div class="three columns height {% if forloop.last %} end {% endif %}">
 			    		<div class="portfolio-preview">
 				        	<a class="bw" href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver desarrollo' %} {{ company.company_name }}">
 				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />
@@ -53,7 +53,7 @@
 					<div class="row">
 				{% endif %}
 				
-			    	<div class="three columns end height">
+			    	<div class="three columns height {% if forloop.last %} end {% endif %}">
 			    		<div class="portfolio-preview">
 				        	<a class="bw" href="{% url portfolio-detail company.slug %}" title="{% trans 'Ver modelo 3D' %} {{ company.company_name }}">
 				        		<img src="{{ company.image_set.all.0.thumb.url }}" alt="{{ company.image_set.all.0.name }}" />

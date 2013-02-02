@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-01 12:22-0500\n"
+"POT-Creation-Date: 2013-02-01 17:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,80 +116,84 @@ msgstr ""
 "Davidvu.co is my personal portfolio about web development, he you can "
 "contact me for freelance mobile and desktop jobs."
 
-#: templates/website/base_home.html:66
+#: templates/website/base_home.html:51
+msgid "Últimos desarrollos"
+msgstr "Lastest developments"
+
+#: templates/website/base_home.html:67
 msgid "Me especializo  en el modelado"
 msgstr "Specializing in the"
 
-#: templates/website/base_home.html:66
+#: templates/website/base_home.html:67
 msgid "y en el desarrollo profesional de sitios web con"
 msgstr "model and professional website development of"
 
-#: templates/website/base_home.html:79
+#: templates/website/base_home.html:80
 msgid "Lo que hago"
 msgstr "What I do"
 
-#: templates/website/base_home.html:81
+#: templates/website/base_home.html:82
 msgid "Soy"
 msgstr "I'm freelance"
 
-#: templates/website/base_home.html:81
+#: templates/website/base_home.html:82
 msgid "desarrollador web"
 msgstr "web developer"
 
-#: templates/website/base_home.html:81 templates/website/base_home.html:82
+#: templates/website/base_home.html:82 templates/website/base_home.html:83
 msgid "y"
 msgstr "and"
 
-#: templates/website/base_home.html:81
+#: templates/website/base_home.html:82
 msgid "artista 3D"
 msgstr "3D artist"
 
-#: templates/website/base_home.html:81
+#: templates/website/base_home.html:82
 msgid "freelance que hace uso de herramientas y librerias de código abierto"
 msgstr "that use open source tools and libraries"
 
-#: templates/website/base_home.html:82
+#: templates/website/base_home.html:83
 msgid "para crear"
 msgstr "to build"
 
-#: templates/website/base_home.html:82
+#: templates/website/base_home.html:83
 msgid "aplicaciones"
 msgstr "applications"
 
-#: templates/website/base_home.html:82
+#: templates/website/base_home.html:83
 msgid "sitios web"
 msgstr "web sites"
 
-#: templates/website/base_home.html:82
+#: templates/website/base_home.html:83
 msgid ""
 "que cumplan estándares, fáciles de actualizar y optimizados para los "
 "buscadores"
 msgstr "that meet standards, easy to update and optimized for search engine"
 
-#: templates/website/base_home.html:91
+#: templates/website/base_home.html:92
 msgid "Clientes"
 msgstr "Clients"
 
-#: templates/website/base_home.html:93
+#: templates/website/base_home.html:94
 msgid ""
 "Mis clientes son agencias de publicidad o empresas independientes que ya "
 "cuentan con el diseño de un"
 msgstr ""
 "My clients are design agencies, freelancers who already have a design of a"
 
-#: templates/website/base_home.html:93
+#: templates/website/base_home.html:94
 msgid "sitio web"
 msgstr "web site"
 
-#: templates/website/base_home.html:94
-msgid "y necesitan programar un sitio web completamente funcional"
+#: templates/website/base_home.html:95
+msgid "y necesitan volverlo completamente funcional"
 msgstr "but need it to coded into a fully working website"
 
-#: templates/website/base_home.html:118
+#: templates/website/base_home.html:119
 msgid "Contáctame"
 msgstr "Contact"
 
-#: templates/website/base_home.html:122
+#: templates/website/base_home.html:123
 msgid ""
 "Un correo electrónico es la forma más fácil y rápida de contactarme, "
 "escríbeme y así podremos trabajar juntos. Un saludo!"
@@ -197,7 +201,7 @@ msgstr ""
 "An email it's the easy way to contact me, write me and we will work "
 "together. Cheers!"
 
-#: templates/website/base_home.html:125
+#: templates/website/base_home.html:126
 msgid "Escribir"
 msgstr "Email me"
 
@@ -261,11 +265,11 @@ msgstr "Portfolio"
 msgid "Contacto"
 msgstr "Contact"
 
-#: templates/website/header.html:33
+#: templates/website/header.html:38
 msgid "Sígueme en Twitter"
 msgstr "Followme @zeroblend"
 
-#: templates/website/header.html:34
+#: templates/website/header.html:39
 msgid "Suscríbete al canal de YouTube"
 msgstr "Subscribe to the YouTube channel"
 

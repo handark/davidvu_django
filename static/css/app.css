@@ -4248,46 +4248,68 @@ hr {
 #nav a:hover {
   color: #000 !important;
 }
+/* line 52, ../sass/_style.scss */
+#nav li.lang {
+  background: white;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  height: 38px;
+  width: 38px;
+}
+/* line 66, ../sass/_style.scss */
+#nav li.lang:hover {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 72, ../sass/_style.scss */
+#nav li.lang a {
+  padding: 0 11px;
+}
 
-/* line 53, ../sass/_style.scss */
+/* line 78, ../sass/_style.scss */
 #footer-container {
   background: url(../images/bg_footer.png);
   margin-top: 40px;
 }
-/* line 58, ../sass/_style.scss */
+/* line 83, ../sass/_style.scss */
 #footer-container p,
 #footer-container h4 {
   color: #fff;
 }
-/* line 62, ../sass/_style.scss */
+/* line 87, ../sass/_style.scss */
 #footer-container a {
   color: #919191;
 }
-/* line 65, ../sass/_style.scss */
+/* line 90, ../sass/_style.scss */
 #footer-container a:hover {
   color: #fff;
 }
-/* line 70, ../sass/_style.scss */
+/* line 95, ../sass/_style.scss */
 #footer-container span {
   color: #ff7301;
 }
-/* line 74, ../sass/_style.scss */
+/* line 99, ../sass/_style.scss */
 #footer-container footer {
   border-top: 1px solid #919191;
   padding-top: 20px;
 }
 
-/* line 80, ../sass/_style.scss */
+/* line 105, ../sass/_style.scss */
 #nav-footer {
   float: right;
 }
 
-/* line 85, ../sass/_style.scss */
+/* line 110, ../sass/_style.scss */
 .social ul.link-list {
   margin: 27px 0;
   height: 40px;
 }
-/* line 89, ../sass/_style.scss */
+/* line 114, ../sass/_style.scss */
 .social ul.link-list li {
   float: right;
   line-height: 38px;
@@ -4297,18 +4319,18 @@ hr {
 /* -----------------------------------------
    Inicio
 ----------------------------------------- */
-/* line 101, ../sass/_style.scss */
+/* line 126, ../sass/_style.scss */
 .frase {
   border-bottom: 1px solid #ff7301;
   border-top: 1px solid #ff7301;
   margin-bottom: 30px;
 }
-/* line 106, ../sass/_style.scss */
+/* line 131, ../sass/_style.scss */
 .frase h1 {
   font-size: 2.5em;
   text-align: center;
 }
-/* line 110, ../sass/_style.scss */
+/* line 135, ../sass/_style.scss */
 .frase h1 span {
   color: #ff7301;
 }
@@ -4316,7 +4338,7 @@ hr {
 /* -----------------------------------------
    Portafolio
 ----------------------------------------- */
-/* line 122, ../sass/_style.scss */
+/* line 147, ../sass/_style.scss */
 #portfolio-list .portfolio-preview {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
@@ -4330,7 +4352,7 @@ hr {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 138, ../sass/_style.scss */
+/* line 163, ../sass/_style.scss */
 #portfolio-list .portfolio-preview:hover {
   border: 1px solid white;
   -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 20px #ff7301;
@@ -4340,41 +4362,41 @@ hr {
   -moz-border-radius: .5em;
   border-radius: .5em;
 }
-/* line 150, ../sass/_style.scss */
+/* line 175, ../sass/_style.scss */
 #portfolio-list .portfolio-preview p.company-name {
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 0px 0 white;
 }
-/* line 160, ../sass/_style.scss */
+/* line 185, ../sass/_style.scss */
 #portfolio-list .portfolio-preview .bw {
   position: relative;
   display: block;
 }
 
-/* line 168, ../sass/_style.scss */
+/* line 193, ../sass/_style.scss */
 .portfolio-header h3 {
   margin: 0;
 }
-/* line 172, ../sass/_style.scss */
+/* line 197, ../sass/_style.scss */
 .portfolio-header .url {
   margin-top: 7px;
 }
 
-/* line 178, ../sass/_style.scss */
+/* line 203, ../sass/_style.scss */
 .description h4 {
   margin: 0;
 }
-/* line 183, ../sass/_style.scss */
+/* line 208, ../sass/_style.scss */
 .description .thumbs {
   margin-top: 10px;
 }
-/* line 186, ../sass/_style.scss */
+/* line 211, ../sass/_style.scss */
 .description .thumbs:hover {
   cursor: pointer;
 }
-/* line 190, ../sass/_style.scss */
+/* line 215, ../sass/_style.scss */
 .description .thumbs img {
   background: rgba(240, 126, 0, 0.2);
   border: 1px solid #ff7301;
@@ -4383,12 +4405,12 @@ hr {
   width: 208px;
 }
 
-/* line 199, ../sass/_style.scss */
+/* line 224, ../sass/_style.scss */
 .big-image {
   margin-bottom: 20px;
 }
 
-/* line 202, ../sass/_style.scss */
+/* line 227, ../sass/_style.scss */
 img.thumb-active {
   border: 1px solid white !important;
 }
@@ -4396,7 +4418,7 @@ img.thumb-active {
 /* -----------------------------------------
    Errores
 ----------------------------------------- */
-/* line 209, ../sass/_style.scss */
+/* line 234, ../sass/_style.scss */
 .error {
   background: #ffcc00;
   background-repeat: repeat-x;
@@ -4420,11 +4442,11 @@ img.thumb-active {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* line 231, ../sass/_style.scss */
+/* line 256, ../sass/_style.scss */
 ul.errorlist {
   list-style: none;
 }
-/* line 234, ../sass/_style.scss */
+/* line 259, ../sass/_style.scss */
 ul.errorlist li {
   clear: both;
   color: #c43c35;
@@ -4434,27 +4456,27 @@ ul.errorlist li {
    Media Queries
 ----------------------------------------- */
 @media only screen and (min-width: 1024px) {
-  /* line 246, ../sass/_style.scss */
+  /* line 271, ../sass/_style.scss */
   #logo {
     opacity: 0.6;
   }
 
-  /* line 249, ../sass/_style.scss */
+  /* line 274, ../sass/_style.scss */
   #nav a {
     opacity: 0.7;
   }
 
-  /* line 253, ../sass/_style.scss */
+  /* line 278, ../sass/_style.scss */
   #portfolio-list .height {
     height: 190px;
   }
-  /* line 257, ../sass/_style.scss */
+  /* line 282, ../sass/_style.scss */
   #portfolio-list .portfolio-preview {
     height: 152px;
     overflow: hidden;
   }
 
-  /* line 263, ../sass/_style.scss */
+  /* line 288, ../sass/_style.scss */
   .bw {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -4463,84 +4485,84 @@ ul.errorlist li {
     transition: all 1s ease;
     -webkit-filter: grayscale(100%);
   }
-  /* line 272, ../sass/_style.scss */
+  /* line 297, ../sass/_style.scss */
   .bw:hover {
     -webkit-filter: grayscale(0%);
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 280, ../sass/_style.scss */
+  /* line 305, ../sass/_style.scss */
   .thumbs img {
     width: 238px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 289, ../sass/_style.scss */
+  /* line 314, ../sass/_style.scss */
   footer {
     text-align: center;
   }
 
-  /* line 292, ../sass/_style.scss */
+  /* line 317, ../sass/_style.scss */
   #logo {
     text-align: center;
   }
 
-  /* line 295, ../sass/_style.scss */
+  /* line 320, ../sass/_style.scss */
   #nav {
     float: none;
     text-align: center;
   }
 
-  /* line 299, ../sass/_style.scss */
+  /* line 324, ../sass/_style.scss */
   #nav-footer {
     float: none;
   }
-  /* line 302, ../sass/_style.scss */
+  /* line 327, ../sass/_style.scss */
   #nav-footer li {
     float: none;
     display: inline-block;
   }
 
-  /* line 307, ../sass/_style.scss */
+  /* line 332, ../sass/_style.scss */
   .social {
     position: absolute;
     top: 5px;
     right: 10px;
   }
 
-  /* line 313, ../sass/_style.scss */
+  /* line 338, ../sass/_style.scss */
   .url {
     text-align: left;
   }
 
-  /* line 319, ../sass/_style.scss */
+  /* line 344, ../sass/_style.scss */
   #portfolio-list .portfolio-preview {
     background: none;
     border: none;
   }
-  /* line 323, ../sass/_style.scss */
+  /* line 348, ../sass/_style.scss */
   #portfolio-list .portfolio-preview:hover {
     border: none;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 334, ../sass/_style.scss */
+  /* line 359, ../sass/_style.scss */
   .frase h1 {
     font-size: 1.8em;
   }
 
-  /* line 339, ../sass/_style.scss */
+  /* line 364, ../sass/_style.scss */
   .social {
     display: none;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 347, ../sass/_style.scss */
+  /* line 372, ../sass/_style.scss */
   #nav a:hover {
     color: white !important;
   }
 
-  /* line 355, ../sass/_style.scss */
+  /* line 380, ../sass/_style.scss */
   .frase h1 {
     font-size: 1.4em;
   }

@@ -48,6 +48,31 @@ hr{
 			color: #000 !important;
 		}
 	}
+	
+	li.lang{
+		background: $white;
+		
+		-webkit-transition: 1s;
+		   -moz-transition: 1s;
+		        transition: 1s;
+		
+		-webkit-border-radius: 18px;
+		   -moz-border-radius: 18px;
+		        border-radius: 18px;
+		
+		height: 38px;
+		width: 38px;
+		
+		&:hover{
+			-webkit-border-radius: 0px;
+		  	   -moz-border-radius: 0px;
+		   	        border-radius: 0px;
+		}
+		
+		a{
+			padding:0 11px;
+		}
+	}
 }
 
 #footer-container{
