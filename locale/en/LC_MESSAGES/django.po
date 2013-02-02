@@ -222,7 +222,7 @@ msgstr ""
 
 #: templates/website/footer.html:13
 msgid "Actualmente estudio el desarrollo de aplicaciones en Java para Android"
-msgstr "Currently study the development of Java applications for Android"
+msgstr "Currently studying the development of Java applications for Android"
 
 #: templates/website/footer.html:14
 msgid "Continuar"
@@ -311,7 +311,7 @@ msgstr "Portfolio of web development and 3D modeling"
 
 #: templates/website/portfolio.html:15
 msgid ""
-"Serie de proyectos tanto de desarollo web como de modelado 3D que he "
+"Serie de proyectos tanto de desarrollo web como de modelado 3D que he "
 "realizado durante varios años de continuo aprendizaje, siempre tratando de "
 "ser efectivo y organizado. Usando adecuadamente la cantidad necesaria de "
 "etiquetas HTML para obtener un buen"

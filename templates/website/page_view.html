@@ -2,7 +2,11 @@
 {% load i18n %}
 
 {% block title %}
-{{ page.title }} David Velásquez | {% trans "Desarrollador web" %} - dJango - Cakephp | {% trans "Modelador 3D" %} 
+{% if LANGUAGE_CODE == 'en' %}
+	{{ page.title_en }}
+{% else %}
+	{{ page.title }}
+{% endif %} David Velásquez | {% trans "Desarrollador web" %} - dJango - Cakephp | {% trans "Modelador 3D" %} 
 {% endblock %}
 
 {% block description %}
